@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nura-icon-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8A2BE2" />
+      <stop offset="50%" stop-color="#00D2FF" />
+      <stop offset="100%" stop-color="#00F5A0" />
+    </linearGradient>
+    <filter id="icon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <g transform="translate(40, 40)">
+    <path d="M 30 100 C 10 70, 20 20, 60 20 C 100 20, 110 60, 90 90 C 75 110, 45 105, 45 80 C 45 65, 60 55, 75 65"
+          fill="none" stroke="url(#nura-icon-grad1)" stroke-width="9" stroke-linecap="round" />
+    <path d="M 20 60 C 20 30, 50 10, 80 25 C 105 40, 115 80, 85 110"
+          fill="none" stroke="url(#nura-icon-grad1)" stroke-width="5" stroke-linecap="round" opacity="0.6" />
+    <circle cx="60" cy="60" r="10" fill="#00F5A0" filter="url(#icon-glow)" />
+  </g>
+</svg>

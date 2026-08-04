@@ -49,9 +49,9 @@ export default function Services() {
             className="group rounded-2xl gradient-brand p-7 text-white hover:-translate-y-0.5 hover:shadow-lg hover:shadow-brand-600/25 transition-all flex flex-col"
           >
             <span className="inline-flex items-center rounded-full bg-white/15 px-2.5 py-1 text-xs font-semibold w-fit">
-              Produto Allu Digital
+              Nura
             </span>
-            <h3 className="mt-3 text-lg font-semibold">Nura — Plataforma de Atendimento com IA</h3>
+            <h3 className="mt-3 text-lg font-semibold">Plataforma de Atendimento com IA</h3>
             <p className="mt-3 text-sm text-white/85">
               WhatsApp, Instagram e Messenger centralizados, com Kanban de atendimento, filas,
               carteiras e Agentes de IA integrados — a partir de R$350/mês.

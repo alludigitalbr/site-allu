@@ -1,33 +1,28 @@
 "use client";
 
-import { FormEvent, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { FormEvent } from "react";
 import { contact, whatsappLink } from "@/lib/site-data";
 
-const EMAILJS_SERVICE_ID = "service_86vvbs9";
-const EMAILJS_TEMPLATE_ID = "template_qvidh24";
-const EMAILJS_PUBLIC_KEY = "ZGTo5BFqBf4W6LLWJ";
-
-type Status = "idle" | "sending" | "success" | "error";
-
 export default function Contact() {
-  const [status, setStatus] = useState<Status>("idle");
-
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
-    setStatus("sending");
+    const data = new FormData(form);
+    const name = data.get("name")?.toString().trim() ?? "";
+    const email = data.get("email")?.toString().trim() ?? "";
+    const subject = data.get("subject")?.toString().trim() ?? "";
+    const message = data.get("message")?.toString().trim() ?? "";
 
-    try {
-      await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form, {
-        publicKey: EMAILJS_PUBLIC_KEY,
-      });
-      setStatus("success");
-      form.reset();
-    } catch (error) {
-      console.error("EmailJS error", error);
-      setStatus("error");
-    }
+    const text = [
+      `Olá! Meu nome é ${name} (${email}).`,
+      subject && `Assunto: ${subject}`,
+      message,
+    ]
+      .filter(Boolean)
+      .join("\n");
+
+    window.open(whatsappLink(text), "_blank", "noopener,noreferrer");
+    form.reset();
   }
 
   return (
@@ -153,31 +148,13 @@ export default function Contact() {
 
             <button
               type="submit"
-              disabled={status === "sending"}
-              className="w-full inline-flex items-center justify-center rounded-lg gradient-brand px-6 py-3 text-sm font-semibold text-white shadow-sm shadow-brand-600/30 hover:-translate-y-0.5 transition-transform disabled:opacity-60 disabled:hover:translate-y-0"
+              className="w-full inline-flex items-center justify-center rounded-lg gradient-brand px-6 py-3 text-sm font-semibold text-white shadow-sm shadow-brand-600/30 hover:-translate-y-0.5 transition-transform"
             >
-              {status === "sending" ? "Enviando..." : "Enviar Mensagem"}
+              Enviar pelo WhatsApp
             </button>
-
-            {status === "success" && (
-              <p className="text-sm text-green-600" role="status">
-                Mensagem enviada com sucesso! Retornaremos em breve.
-              </p>
-            )}
-            {status === "error" && (
-              <p className="text-sm text-red-600" role="alert">
-                Não foi possível enviar agora. Tente novamente ou fale pelo{" "}
-                <a
-                  href={whatsappLink("Olá! Tentei usar o formulário do site e não consegui enviar.")}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline"
-                >
-                  WhatsApp
-                </a>
-                .
-              </p>
-            )}
+            <p className="text-xs text-ink-500 dark:text-ink-400">
+              Ao enviar, abrimos o WhatsApp com sua mensagem pronta pra falar direto com o time.
+            </p>
           </form>
         </div>
       </div>

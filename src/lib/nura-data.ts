@@ -37,13 +37,183 @@ export const nuraFeatureGroups = [
   },
 ];
 
-export const nuraPricing = {
-  price: "R$350/mês",
-  includes: ["1 conexão de WhatsApp", "3 filas de atendimento", "até 5 usuários"],
-  implantationNote: "+ taxa de implantação sob consulta",
-  customNote:
-    "Precisa de um Agente de IA personalizado integrado ao CRM? Isso é tratado sob consulta — o R$350/mês cobre a organização do atendimento (CRM); customizações e IA são orçadas conforme a necessidade.",
-};
+export interface NuraPlan {
+  slug: "basic" | "start" | "start2" | "pro";
+  name: string;
+  price: number | null;
+  priceLabel: string;
+  highlight?: boolean;
+  quotas: {
+    contas: number;
+    usuarios: number;
+    filas: number;
+    whatsapp: number;
+  };
+  features: string[];
+  flags: {
+    instagram: boolean;
+    facebook: boolean;
+    carteirizacao: boolean;
+    agendamento: boolean;
+    chatInterno: boolean;
+    kanban: boolean;
+    apiExterna: boolean;
+    agenteIA: boolean;
+    integracoes: boolean;
+    flowbuilder: boolean;
+    treinamento: boolean;
+    acompanhamento: boolean;
+  };
+}
+
+export const nuraPlans: NuraPlan[] = [
+  {
+    slug: "basic",
+    name: "Basic",
+    price: 100,
+    priceLabel: "R$100/mês",
+    quotas: { contas: 1, usuarios: 1, filas: 2, whatsapp: 1 },
+    features: [
+      "1 conta ativa",
+      "1 usuário",
+      "2 filas",
+      "1 número de WhatsApp",
+      "Dash de gestão dos atendimentos",
+      "Respostas rápidas",
+      "Tags",
+    ],
+    flags: {
+      instagram: false,
+      facebook: false,
+      carteirizacao: false,
+      agendamento: false,
+      chatInterno: false,
+      kanban: false,
+      apiExterna: false,
+      agenteIA: false,
+      integracoes: false,
+      flowbuilder: false,
+      treinamento: false,
+      acompanhamento: false,
+    },
+  },
+  {
+    slug: "start",
+    name: "Start",
+    price: 350,
+    priceLabel: "R$350/mês",
+    highlight: true,
+    quotas: { contas: 1, usuarios: 5, filas: 3, whatsapp: 1 },
+    features: [
+      "1 conta ativa",
+      "5 usuários",
+      "3 filas",
+      "1 número de WhatsApp",
+      "Dash de gestão dos atendimentos",
+      "Instagram",
+      "Facebook",
+      "Carteirização",
+      "Agendamento",
+      "Chat interno",
+      "Kanban",
+      "Respostas rápidas",
+      "Tags",
+    ],
+    flags: {
+      instagram: true,
+      facebook: true,
+      carteirizacao: true,
+      agendamento: true,
+      chatInterno: true,
+      kanban: true,
+      apiExterna: false,
+      agenteIA: false,
+      integracoes: false,
+      flowbuilder: false,
+      treinamento: false,
+      acompanhamento: false,
+    },
+  },
+  {
+    slug: "start2",
+    name: "Start II",
+    price: 400,
+    priceLabel: "R$400/mês",
+    quotas: { contas: 1, usuarios: 10, filas: 4, whatsapp: 1 },
+    features: [
+      "1 conta ativa",
+      "10 usuários",
+      "4 filas",
+      "1 número de WhatsApp",
+      "Dash de gestão dos atendimentos",
+      "Instagram",
+      "Facebook",
+      "Carteirização",
+      "Agendamento",
+      "Chat interno",
+      "Kanban",
+      "API externa",
+      "Respostas rápidas",
+      "Tags",
+      "Integrações",
+    ],
+    flags: {
+      instagram: true,
+      facebook: true,
+      carteirizacao: true,
+      agendamento: true,
+      chatInterno: true,
+      kanban: true,
+      apiExterna: true,
+      agenteIA: false,
+      integracoes: true,
+      flowbuilder: false,
+      treinamento: false,
+      acompanhamento: false,
+    },
+  },
+  {
+    slug: "pro",
+    name: "Pro",
+    price: null,
+    priceLabel: "Sob consulta",
+    quotas: { contas: 1, usuarios: 999, filas: 999, whatsapp: 1 },
+    features: [
+      "Plano personalizado, sem limite fixo de usuários ou filas",
+      "Atendimento exclusivo",
+      "Consultoria de processo",
+      "Consultoria de IA",
+      "Dash de gestão dos atendimentos",
+      "Instagram",
+      "Facebook",
+      "Carteirização",
+      "Agendamento",
+      "Chat interno",
+      "Kanban",
+      "API de integração",
+      "Agente de IA",
+      "Respostas rápidas",
+      "Tags",
+      "FlowBuilder",
+      "Treinamento",
+      "Acompanhamento",
+    ],
+    flags: {
+      instagram: true,
+      facebook: true,
+      carteirizacao: true,
+      agendamento: true,
+      chatInterno: true,
+      kanban: true,
+      apiExterna: true,
+      agenteIA: true,
+      integracoes: true,
+      flowbuilder: true,
+      treinamento: true,
+      acompanhamento: true,
+    },
+  },
+];
 
 export const nuraDifferentiators = [
   {

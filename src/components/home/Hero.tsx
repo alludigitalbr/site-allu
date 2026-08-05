@@ -10,10 +10,7 @@ export default function Hero() {
 
       <div className="mx-auto max-w-6xl px-5">
         <div className="max-w-3xl">
-          <span className="inline-flex items-center rounded-full border border-ink-200 dark:border-ink-800 bg-white/70 dark:bg-ink-900/70 px-3.5 py-1.5 text-xs font-semibold text-brand-600 dark:text-brand-400">
-            Agentes de IA em produção, não em promessa
-          </span>
-          <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-ink-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-ink-900 dark:text-white">
             A Inteligência Artificial que realmente <span className="gradient-brand-text">trabalha pela sua empresa</span>
           </h1>
           <p className="mt-6 text-lg text-ink-500 dark:text-ink-400 max-w-2xl">

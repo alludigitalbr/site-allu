@@ -2,7 +2,7 @@ export const nuraFeatureGroups = [
   {
     title: "Canais de atendimento",
     features: [
-      "WhatsApp via Baileys (QR Code) — conexão rápida, sem depender da API oficial",
+      "WhatsApp via QR Code — conexão rápida, sem depender da API oficial",
       "WhatsApp API Oficial (Cloud API) — para operações que exigem o canal certificado pela Meta",
       "Coexistência WhatsApp — usa o número pessoal e a API ao mesmo tempo, sem perder histórico",
       "Instagram DM — atendimento direto pelas mensagens do Instagram",

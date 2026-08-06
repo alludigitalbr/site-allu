@@ -305,7 +305,7 @@ export const portfolioCases: PortfolioCase[] = [
       },
     ],
     results:
-      "Dashboard operacional em produção com visibilidade total do funil de atendimento — 161 atendimentos realizados no mês, com status monitorados em tempo real (em andamento com IA, com humano, aguardando peça, aguardando cliente, etc.).",
+      "Dashboard operacional em produção com visibilidade total do funil de atendimento — +500 atendimentos realizados no mês, com status monitorados em tempo real (em andamento com IA, com humano, aguardando peça, aguardando cliente, etc.).",
   },
   {
     slug: "amanda-cabral",

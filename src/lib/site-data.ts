@@ -330,11 +330,12 @@ export const portfolioCases: PortfolioCase[] = [
 ];
 
 export const portfolioStats = [
-  { value: "10", label: "projetos entregues, de startups a empresas estabelecidas" },
+  { value: "+10", label: "projetos entregues, de startups a empresas estabelecidas" },
   { value: "+40", label: "clientes ativos gerados para um único produto" },
   { value: "R$180 mil/mês", label: "de faturamento médio gerado para cliente" },
   { value: "24h → 10min", label: "leadtime de atendimento" },
   { value: "1 semana → 5min", label: "análise de editais" },
-  { value: "+500/mês", label: "atendimentos monitorados" },
-  { value: "23", label: "agentes SDR desenvolvidos para um único cliente" },
+  { value: "+85K", label: "mensagens recebidas" },
+  { value: "+52K", label: "mensagens enviadas" },
+  { value: "+20", label: "agentes SDR desenvolvidos para clientes" },
 ];

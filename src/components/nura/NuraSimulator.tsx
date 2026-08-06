@@ -42,8 +42,8 @@ export default function NuraSimulator() {
     setFlags((prev) => ({ ...prev, [key]: !prev[key] }));
   }
 
-  // Treinamento e acompanhamento são serviços agregados, não travam o plano
-  const nonGatingFlags: FlagKey[] = ["treinamento", "acompanhamento"];
+  // Treinamento é um serviço agregado e não trava o plano; acompanhamento dedicado é exclusivo do Pro
+  const nonGatingFlags: FlagKey[] = ["treinamento"];
 
   const recommended = useMemo(() => {
     const orderedPlans = [...nuraPlans].sort((a, b) => a.quotas.usuarios - b.quotas.usuarios);

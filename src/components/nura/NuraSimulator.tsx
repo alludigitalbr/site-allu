@@ -42,12 +42,17 @@ export default function NuraSimulator() {
     setFlags((prev) => ({ ...prev, [key]: !prev[key] }));
   }
 
+  // Treinamento e acompanhamento são serviços agregados, não travam o plano
+  const nonGatingFlags: FlagKey[] = ["treinamento", "acompanhamento"];
+
   const recommended = useMemo(() => {
     const orderedPlans = [...nuraPlans].sort((a, b) => a.quotas.usuarios - b.quotas.usuarios);
     const match = orderedPlans.find((plan) => {
       if (plan.quotas.usuarios < usuarios) return false;
       if (plan.quotas.filas < filas) return false;
-      return (Object.keys(flags) as FlagKey[]).every((key) => !flags[key] || plan.flags[key]);
+      return (Object.keys(flags) as FlagKey[]).every(
+        (key) => nonGatingFlags.includes(key) || !flags[key] || plan.flags[key]
+      );
     });
     return match ?? nuraPlans[nuraPlans.length - 1];
   }, [usuarios, filas, flags]);

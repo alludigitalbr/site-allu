@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react";
 import {
-  otherClients,
   portfolioCases,
   portfolioPillars,
   portfolioStats,
@@ -35,7 +34,7 @@ export default function Portfolio() {
             Portfólio
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-ink-900 dark:text-white">
-            9 cases reais de agentes de IA em produção
+            {portfolioCases.length} cases reais de agentes de IA e atendimento em produção
           </h2>
           <p className="mt-4 text-ink-500 dark:text-ink-400">
             Organizados pelos 4 pilares de atuação da Allu Digital. Filtre por pilar ou explore
@@ -193,12 +192,6 @@ export default function Portfolio() {
             );
           })}
         </div>
-
-        <p className="mt-10 text-sm text-ink-500 dark:text-ink-400">
-          <span className="font-semibold text-ink-900 dark:text-white">Outros clientes: </span>
-          {otherClients.join(", ")} utilizam o CRM próprio desenvolvido pela Allu Digital para
-          organizar e centralizar o atendimento via WhatsApp.
-        </p>
       </div>
     </section>
   );

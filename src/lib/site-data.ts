@@ -109,7 +109,8 @@ export type PortfolioPillarSlug =
   | "arquitetura"
   | "automacao"
   | "produto"
-  | "times";
+  | "times"
+  | "atendimento";
 
 export const portfolioPillars: {
   slug: PortfolioPillarSlug;
@@ -139,6 +140,12 @@ export const portfolioPillars: {
     title: "Formação e Estruturação de Times",
     description:
       "Montagem de times técnicos, documentação, treinamento e onboarding.",
+  },
+  {
+    slug: "atendimento",
+    title: "Plataforma de Atendimento via WhatsApp",
+    description:
+      "Implantação do Nura para centralizar e organizar o atendimento via WhatsApp.",
   },
 ];
 
@@ -261,7 +268,7 @@ export const portfolioCases: PortfolioCase[] = [
     slug: "greenville",
     title: "Greenville — Automação de Atendimento e Cobrança",
     client: "Loteamento e construtora Greenville",
-    pillars: ["automacao"],
+    pillars: ["automacao", "atendimento"],
     challenge:
       "Automatizar atendimentos manuais e repetitivos — 2ª via de contrato, 2ª via de boleto e extrato de saldo devedor — e criar uma régua de cobrança automática para clientes inadimplentes.",
     results:
@@ -282,7 +289,7 @@ export const portfolioCases: PortfolioCase[] = [
     slug: "tokai",
     title: "Tokai — Infraestrutura, Atendimento SAC com IA e Monitoramento de Preços",
     client: "Tokai, instrumentos musicais",
-    pillars: ["arquitetura", "automacao", "produto"],
+    pillars: ["arquitetura", "automacao", "produto", "atendimento"],
     approach: [
       {
         label: "Manutenção de rede",
@@ -300,13 +307,26 @@ export const portfolioCases: PortfolioCase[] = [
     results:
       "Dashboard operacional em produção com visibilidade total do funil de atendimento — 161 atendimentos realizados no mês, com status monitorados em tempo real (em andamento com IA, com humano, aguardando peça, aguardando cliente, etc.).",
   },
-];
-
-export const otherClients = [
-  "Loteamento Greenville",
-  "Clínica Odontológica Amanda Cabral",
-  "Madeforte",
-  "SAC da Tokai",
+  {
+    slug: "amanda-cabral",
+    title: "Clínica Odontológica Amanda Cabral — Atendimento via WhatsApp",
+    client: "Clínica Odontológica Amanda Cabral",
+    pillars: ["atendimento"],
+    challenge:
+      "Centralizar o atendimento aos pacientes pelo WhatsApp, organizando agendamentos e follow-ups que antes eram feitos manualmente pela recepção.",
+    results:
+      "Atendimento organizado em filas e tags dentro do Nura, com histórico completo por paciente e follow-up estruturado.",
+  },
+  {
+    slug: "madeforte",
+    title: "Madeforte — Atendimento via WhatsApp",
+    client: "Madeforte",
+    pillars: ["atendimento"],
+    challenge:
+      "Centralizar o atendimento comercial via WhatsApp, com organização de leads por tags e filas.",
+    results:
+      "Atendimento estruturado no Nura, com respostas rápidas e organização por fila substituindo o WhatsApp pessoal disperso entre atendentes.",
+  },
 ];
 
 export const portfolioStats = [

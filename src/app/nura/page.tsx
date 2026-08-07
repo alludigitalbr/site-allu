@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import NuraHero from "@/components/nura/NuraHero";
 import NuraFeatures from "@/components/nura/NuraFeatures";
 import NuraDashboards from "@/components/nura/NuraDashboards";
-import NuraSimulator from "@/components/nura/NuraSimulator";
 import NuraPricing from "@/components/nura/NuraPricing";
 import NuraDifferentiators from "@/components/nura/NuraDifferentiators";
 import NuraFinalCta from "@/components/nura/NuraFinalCta";
@@ -23,7 +22,6 @@ export default function NuraPage() {
         <NuraHero />
         <NuraFeatures />
         <NuraDashboards />
-        <NuraSimulator />
         <NuraPricing />
         <NuraDifferentiators />
         <NuraFinalCta />

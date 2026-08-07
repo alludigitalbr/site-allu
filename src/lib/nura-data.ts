@@ -63,40 +63,11 @@ export interface NuraPlan {
     flowbuilder: boolean;
     treinamento: boolean;
     acompanhamento: boolean;
+    agenteSupervisor: boolean;
   };
 }
 
 export const nuraPlans: NuraPlan[] = [
-  {
-    slug: "basic",
-    name: "Basic",
-    price: 100,
-    priceLabel: "R$100/mês",
-    quotas: { contas: 1, usuarios: 1, filas: 2, whatsapp: 1 },
-    features: [
-      "1 conta ativa",
-      "1 usuário",
-      "2 filas",
-      "1 número de WhatsApp",
-      "Dash de gestão dos atendimentos",
-      "Respostas rápidas",
-      "Tags",
-    ],
-    flags: {
-      instagram: false,
-      facebook: false,
-      carteirizacao: false,
-      agendamento: false,
-      chatInterno: false,
-      kanban: false,
-      apiExterna: false,
-      agenteIA: false,
-      integracoes: false,
-      flowbuilder: false,
-      treinamento: false,
-      acompanhamento: false,
-    },
-  },
   {
     slug: "start",
     name: "Start",
@@ -132,6 +103,7 @@ export const nuraPlans: NuraPlan[] = [
       flowbuilder: false,
       treinamento: false,
       acompanhamento: false,
+      agenteSupervisor: false,
     },
   },
   {
@@ -156,6 +128,7 @@ export const nuraPlans: NuraPlan[] = [
       "Respostas rápidas",
       "Tags",
       "Integrações",
+      "Agente Supervisor de Atendimento IA",
     ],
     flags: {
       instagram: true,
@@ -170,6 +143,7 @@ export const nuraPlans: NuraPlan[] = [
       flowbuilder: false,
       treinamento: false,
       acompanhamento: false,
+      agenteSupervisor: true,
     },
   },
   {
@@ -192,6 +166,7 @@ export const nuraPlans: NuraPlan[] = [
       "Kanban",
       "API de integração",
       "Agente de IA",
+      "Agente Supervisor de Atendimento IA",
       "Respostas rápidas",
       "Tags",
       "FlowBuilder",
@@ -211,6 +186,7 @@ export const nuraPlans: NuraPlan[] = [
       flowbuilder: true,
       treinamento: true,
       acompanhamento: true,
+      agenteSupervisor: true,
     },
   },
 ];

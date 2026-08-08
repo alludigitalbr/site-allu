@@ -99,9 +99,17 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <p className="mx-auto max-w-6xl px-5 py-6 text-xs text-ink-400">
-          © {year} Allu Digital. Todos os direitos reservados.
-        </p>
+        <div className="mx-auto max-w-6xl px-5 py-6 flex flex-wrap items-center justify-between gap-3 text-xs text-ink-400">
+          <p>© {year} Allu Digital. Todos os direitos reservados.</p>
+          <div className="flex gap-5">
+            <Link href="/nura/privacidade" className="hover:text-white transition-colors">
+              Política de Privacidade
+            </Link>
+            <Link href="/nura/termos" className="hover:text-white transition-colors">
+              Termos de Uso
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );

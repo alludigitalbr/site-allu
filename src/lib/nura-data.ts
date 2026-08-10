@@ -73,7 +73,6 @@ export const nuraPlans: NuraPlan[] = [
     name: "Basic",
     price: 350,
     priceLabel: "R$350/mês",
-    highlight: true,
     quotas: { contas: 1, usuarios: 5, filas: 3, whatsapp: 1 },
     features: [
       "1 conta ativa",
@@ -111,6 +110,7 @@ export const nuraPlans: NuraPlan[] = [
     name: "Start",
     price: 400,
     priceLabel: "R$400/mês",
+    highlight: true,
     quotas: { contas: 1, usuarios: 10, filas: 4, whatsapp: 1 },
     features: [
       "1 conta ativa",

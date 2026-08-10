@@ -7,9 +7,12 @@ import { useState } from "react";
 import { contact, navLinks, whatsappLink } from "@/lib/site-data";
 import ThemeToggle from "@/components/ThemeToggle";
 
+const NURA_APP_URL = "https://crm.chatallu.com.br/";
+
 export default function Header() {
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const isNuraSection = pathname.startsWith("/nura");
   const [open, setOpen] = useState(false);
 
   const hrefFor = (href: string) => (isHome ? href : `/${href}`);
@@ -56,6 +59,16 @@ export default function Header() {
 
           <div className="hidden lg:flex items-center gap-3">
             <ThemeToggle />
+            {isNuraSection && (
+              <a
+                href={NURA_APP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-semibold text-ink-700 dark:text-ink-200 hover:text-brand-500 transition-colors"
+              >
+                Entrar
+              </a>
+            )}
             <a
               href={whatsappLink("Olá! Gostaria de falar com o time da Allu Digital.")}
               target="_blank"
@@ -107,6 +120,17 @@ export default function Header() {
             >
               Nura
             </Link>
+            {isNuraSection && (
+              <a
+                href={NURA_APP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                className="py-2 text-sm font-semibold text-ink-700 dark:text-ink-200"
+              >
+                Entrar na plataforma
+              </a>
+            )}
             <a
               href={whatsappLink("Olá! Gostaria de falar com o time da Allu Digital.")}
               target="_blank"

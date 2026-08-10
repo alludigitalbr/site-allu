@@ -70,7 +70,7 @@ export interface NuraPlan {
 export const nuraPlans: NuraPlan[] = [
   {
     slug: "start",
-    name: "Start",
+    name: "Basic",
     price: 350,
     priceLabel: "R$350/mês",
     highlight: true,
@@ -108,7 +108,7 @@ export const nuraPlans: NuraPlan[] = [
   },
   {
     slug: "start2",
-    name: "Start II",
+    name: "Start",
     price: 400,
     priceLabel: "R$400/mês",
     quotas: { contas: 1, usuarios: 10, filas: 4, whatsapp: 1 },

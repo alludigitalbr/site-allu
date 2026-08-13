@@ -2,11 +2,35 @@
   "rewrites": [
     {
       "source": "/lp-agosto-nura",
-      "destination": "https://lp-agosto-nura.vercel.app/lp-agosto-nura/"
+      "destination": "https://lp-agosto-nura.vercel.app/"
     },
     {
       "source": "/lp-agosto-nura/:path*",
       "destination": "https://lp-agosto-nura.vercel.app/:path*"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "https://lp-agosto-nura.vercel.app/assets/:path*"
+    },
+    {
+      "source": "/nura-icon.svg",
+      "destination": "https://lp-agosto-nura.vercel.app/nura-icon.svg"
+    },
+    {
+      "source": "/nura-logo.svg",
+      "destination": "https://lp-agosto-nura.vercel.app/nura-logo.svg"
+    },
+    {
+      "source": "/kanban-operacional.png",
+      "destination": "https://lp-agosto-nura.vercel.app/kanban-operacional.png"
+    },
+    {
+      "source": "/dashboard-indicadores.png",
+      "destination": "https://lp-agosto-nura.vercel.app/dashboard-indicadores.png"
+    },
+    {
+      "source": "/funil-vendas.png",
+      "destination": "https://lp-agosto-nura.vercel.app/funil-vendas.png"
     }
   ]
 }

@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Standalone Vite app, not part of the Next.js project
+    "landing-pages/**",
   ]),
 ]);
 

@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/lp-agosto-nura",
-      "destination": "https://lp-agosto-nura.vercel.app/"
+      "destination": "https://lp-agosto-nura.vercel.app/lp-agosto-nura/"
     },
     {
       "source": "/lp-agosto-nura/:path*",

@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/lp-agosto-nura",
+      "destination": "https://lp-agosto-nura.vercel.app/"
+    },
+    {
+      "source": "/lp-agosto-nura/:path*",
+      "destination": "https://lp-agosto-nura.vercel.app/:path*"
+    }
+  ]
+}

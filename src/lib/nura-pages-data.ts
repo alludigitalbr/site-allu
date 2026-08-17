@@ -191,7 +191,7 @@ export const whatsappOferece = [
 export const sobreCompany = {
   nome: "Allu Digital Tecnologia e Consultoria em Inteligência Artificial LTDA",
   cnpj: "57.787.089/0001-03",
-  endereco: "R. Vesper, 100, Casa 30 — Vila Santo Antônio do Portão, Cotia/SP, CEP 06.716-715",
+  endereco: "Cotia/SP",
 };
 
 // ---------- Afiliados ----------

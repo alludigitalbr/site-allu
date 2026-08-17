@@ -8,7 +8,7 @@ export default function NuraSubNav() {
   const pathname = usePathname();
 
   return (
-    <div className="sticky top-[68px] sm:top-[76px] z-40 glass-panel border-b">
+    <div className="mt-20 sm:mt-24 border-b border-border-subtle bg-surface">
       <div className="mx-auto max-w-6xl px-5">
         <nav className="flex gap-1 overflow-x-auto py-2.5 scrollbar-none">
           {nuraSubNav.map((item) => {

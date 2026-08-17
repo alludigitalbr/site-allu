@@ -33,8 +33,7 @@ export const iaFeatures = [
 ];
 
 export const iaModels = [
-  { model: "Meta Llama 3.1 8B", use: "Respostas rápidas e triagem de conversas" },
-  { model: "Meta Llama 3.3 70B", use: "Conversas complexas e resumo com mais contexto" },
+  { model: "openai/gpt-oss-20b", use: "Respostas rápidas e conversas complexas" },
   { model: "OpenAI Whisper Large V3", use: "Transcrição de áudio" },
 ];
 

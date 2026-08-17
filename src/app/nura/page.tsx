@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NuraSubNav from "@/components/nura/NuraSubNav";
 import NuraHero from "@/components/nura/NuraHero";
 import NuraFeatures from "@/components/nura/NuraFeatures";
 import NuraDashboards from "@/components/nura/NuraDashboards";
@@ -18,6 +19,7 @@ export default function NuraPage() {
   return (
     <>
       <Header />
+      <NuraSubNav />
       <main className="flex-1">
         <NuraHero />
         <NuraFeatures />

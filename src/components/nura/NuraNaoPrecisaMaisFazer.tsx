@@ -2,7 +2,7 @@ import { naoPrecisaMaisFazer } from "@/lib/nura-pages-data";
 
 export default function NuraNaoPrecisaMaisFazer() {
   return (
-    <section className="py-20 lg:py-24">
+    <section className="py-20 lg:py-24 bg-ink-50 dark:bg-ink-950">
       <div className="mx-auto max-w-6xl px-5">
         <div className="max-w-2xl">
           <span className="text-sm font-semibold text-brand-600 dark:text-brand-400 uppercase tracking-wide">
@@ -17,7 +17,7 @@ export default function NuraNaoPrecisaMaisFazer() {
           {naoPrecisaMaisFazer.map((item) => (
             <div
               key={item.title}
-              className="rounded-2xl bg-ink-50 dark:bg-ink-900 border border-ink-200 dark:border-ink-800 p-6"
+              className="rounded-2xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 p-6"
             >
               <div className="flex items-start gap-3">
                 <svg

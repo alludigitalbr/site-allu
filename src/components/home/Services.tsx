@@ -52,31 +52,38 @@ export default function Services() {
               Nura
             </span>
             <h3 className="mt-3 text-lg font-semibold">Plataforma de Atendimento com IA</h3>
-            <p className="mt-3 text-sm text-white/85">
-              WhatsApp, Instagram e Messenger centralizados, com Kanban de atendimento, filas,
-              carteiras e Agentes de IA integrados — a partir de R$350/mês.
+            <p className="mt-3 text-sm font-semibold text-white">
+              Veja o que você e sua equipe não precisam mais fazer!
             </p>
             <ul className="mt-5 space-y-2.5 flex-1">
-              {["Atendimento omnichannel", "Automações com IA", "Kanban e organização de leads"].map(
-                (feature) => (
-                  <li key={feature} className="flex items-start gap-2.5 text-sm text-white/90">
-                    <svg
-                      className="mt-0.5 h-4 w-4 shrink-0"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.7 5.3a1 1 0 010 1.4l-7.5 7.5a1 1 0 01-1.4 0l-3.5-3.5a1 1 0 111.4-1.4l2.8 2.8 6.8-6.8a1 1 0 011.4 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    {feature}
-                  </li>
-                )
-              )}
+              {[
+                "Digitar e atualizar cadastros",
+                "Lembrar de fazer follow-up",
+                "Organizar histórico de conversas",
+                "Resolver solicitações financeiras/administrativas direto",
+                "Medir satisfação sem pesquisa manual",
+                "Delegar conversas manualmente",
+              ].map((feature) => (
+                <li key={feature} className="flex items-start gap-2.5 text-sm text-white/90">
+                  <svg
+                    className="mt-0.5 h-4 w-4 shrink-0"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.7 5.3a1 1 0 010 1.4l-7.5 7.5a1 1 0 01-1.4 0l-3.5-3.5a1 1 0 111.4-1.4l2.8 2.8 6.8-6.8a1 1 0 011.4 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  {feature}
+                </li>
+              ))}
             </ul>
+            <p className="mt-5 text-xs text-white/80">
+              WhatsApp, Instagram e Messenger centralizados a partir de R$350/mês
+            </p>
             <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold">
               Conhecer o Nura
               <svg

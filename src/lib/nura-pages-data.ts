@@ -7,6 +7,61 @@ export const nuraSubNav = [
   { href: "/nura/sobre", label: "Sobre" },
 ];
 
+// ---------- O que a IA assume ----------
+
+export const naoPrecisaMaisFazer = [
+  {
+    title: "Digitar e atualizar cadastros",
+    description:
+      "A IA lê as conversas do WhatsApp e preenche automaticamente nome, e-mail, interesse, status da negociação e estágio do funil — sem intervenção humana.",
+  },
+  {
+    title: "Qualificar leads manualmente",
+    description:
+      "O sistema conversa com o contato inicial, faz as perguntas de triagem e identifica se o lead é qualificado antes de repassar a um vendedor.",
+  },
+  {
+    title: "Lembrar de fazer follow-up",
+    description:
+      "A ferramenta agenda e envia mensagens de acompanhamento personalizadas no momento certo, com base no histórico de conversas.",
+  },
+  {
+    title: "Organizar histórico de conversas",
+    description:
+      "As interações via áudio ou texto são transcritas, resumidas e categorizadas automaticamente, eliminando a necessidade de ler históricos longos.",
+  },
+  {
+    title: "Agendar reuniões manualmente",
+    description:
+      "O sistema envia horários disponíveis, confirma presença e envia lembretes antes do compromisso, direto no WhatsApp do cliente.",
+  },
+  {
+    title: "Delegar conversas manualmente",
+    description:
+      "As mensagens recebidas são distribuídas para o vendedor ou setor correto com base no contexto do atendimento.",
+  },
+  {
+    title: "Detectar quando escalar para um humano",
+    description:
+      "A IA sabe identificar sozinha quando o assunto sai do escopo dela (reclamação grave, pedido explícito de falar com atendente, situação sensível) e transfere na hora — sem o cliente ficar preso num bot que não resolve.",
+  },
+  {
+    title: "Resolver solicitações financeiras/administrativas direto",
+    description:
+      "Segunda via de boleto, status de pedido, consulta de agendamento — a IA busca a informação no sistema (ERP, financeiro, agenda) e responde sozinha, sem precisar de alguém indo manualmente atrás do dado.",
+  },
+  {
+    title: "Medir satisfação sem pesquisa manual",
+    description:
+      "A IA analisa o tom da conversa e identifica sinais de insatisfação ou risco de perda do cliente automaticamente, sem depender de enviar pesquisa de NPS manualmente.",
+  },
+  {
+    title: "Reengajar lead esfriado",
+    description:
+      "Identifica sozinha contatos que pararam de responder e dispara uma tentativa de reativação no momento certo, sem depender de alguém revisar planilha de leads parados.",
+  },
+];
+
 // ---------- IA ----------
 
 export const iaFeatures = [

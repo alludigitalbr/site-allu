@@ -9,7 +9,7 @@ export default function NuraNaoPrecisaMaisFazer() {
             O que a IA assume por você
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-ink-900 dark:text-white">
-            O que o cliente e a equipe não precisam mais fazer
+            O que sua equipe não precisa mais fazer
           </h2>
         </div>
 

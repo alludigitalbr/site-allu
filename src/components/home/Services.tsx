@@ -52,14 +52,15 @@ export default function Services() {
               Nura
             </span>
             <h3 className="mt-3 text-lg font-semibold">Plataforma de Atendimento com IA</h3>
-            <p className="mt-3 text-sm font-semibold text-white">
+
+            <p className="mt-4 pt-4 border-t border-white/15 text-xs font-semibold uppercase tracking-wide text-white/80">
               Veja o que você e sua equipe não precisam mais fazer!
             </p>
-            <ul className="mt-5 space-y-2.5 flex-1">
+            <ul className="mt-4 space-y-2.5 flex-1">
               {[
                 "Digitar e atualizar cadastros",
                 "Lembrar de fazer follow-up",
-                "Organizar histórico de conversas",
+                "Ler histórico das conversas",
                 "Resolver solicitações financeiras/administrativas direto",
                 "Medir satisfação sem pesquisa manual",
                 "Delegar conversas manualmente",

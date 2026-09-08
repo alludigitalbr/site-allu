@@ -28,7 +28,10 @@ export default function NuraHero() {
               priority
               className="h-32 sm:h-40 w-auto hidden dark:block"
             />
-            <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-ink-900 dark:text-white">
+            <span className="mt-6 inline-flex items-center rounded-full border border-ink-200 dark:border-ink-800 bg-white/70 dark:bg-ink-900/70 px-3.5 py-1.5 text-xs font-semibold text-brand-600 dark:text-brand-400">
+              Nura, o PABX digital de mensageria para sua empresa
+            </span>
+            <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-ink-900 dark:text-white">
               Muito mais que um CRM. <span className="gradient-brand-text">Atendimento, IA e organização</span> em um só lugar.
             </h1>
             <p className="mt-6 text-lg text-ink-500 dark:text-ink-400 max-w-xl">

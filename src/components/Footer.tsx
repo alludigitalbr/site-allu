@@ -26,6 +26,16 @@ export default function Footer() {
               </a>
             </li>
             <li>
+              <Link href="/servicos/infraestrutura-de-redes" className="hover:text-white transition-colors">
+                Infraestrutura de Redes
+              </Link>
+            </li>
+            <li>
+              <Link href="/servicos/suporte-manutencao" className="hover:text-white transition-colors">
+                Suporte e Manutenção
+              </Link>
+            </li>
+            <li>
               <Link href="/nura" className="hover:text-white transition-colors">
                 Plataforma Nura
               </Link>

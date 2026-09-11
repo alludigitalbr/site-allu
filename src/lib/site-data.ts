@@ -103,6 +103,30 @@ export const services = [
       "Integração de APIs",
     ],
   },
+  {
+    title: "Infraestrutura de Redes",
+    description:
+      "Cabeamento estruturado, redes wi-fi corporativas e organização de rack — infraestrutura pensada para durar e escalar.",
+    features: [
+      "Cabeamento estruturado",
+      "Redes wi-fi corporativas",
+      "Organização de rack",
+      "Instalação e gestão de servidores",
+    ],
+    href: "/servicos/infraestrutura-de-redes",
+  },
+  {
+    title: "Suporte e Manutenção",
+    description:
+      "Suporte técnico dedicado e manutenção preventiva/corretiva para manter sua operação de TI sempre no ar.",
+    features: [
+      "Suporte técnico dedicado",
+      "Manutenção preventiva e corretiva",
+      "Monitoramento contínuo",
+      "Consultoria técnica",
+    ],
+    href: "/servicos/suporte-manutencao",
+  },
 ];
 
 export type PortfolioPillarSlug =

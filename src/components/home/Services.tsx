@@ -14,35 +14,46 @@ export default function Services() {
           </h2>
         </div>
 
-        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service) => (
-            <div
-              key={service.title}
-              className="rounded-2xl border border-ink-200 dark:border-ink-800 p-7 hover:border-brand-600 hover:shadow-lg hover:shadow-brand-600/5 transition-all"
-            >
-              <h3 className="text-lg font-semibold text-ink-900 dark:text-white">{service.title}</h3>
-              <p className="mt-3 text-sm text-ink-500 dark:text-ink-400">{service.description}</p>
-              <ul className="mt-5 space-y-2.5">
-                {service.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-2.5 text-sm text-ink-700 dark:text-ink-200">
-                    <svg
-                      className="mt-0.5 h-4 w-4 shrink-0 text-brand-600"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.7 5.3a1 1 0 010 1.4l-7.5 7.5a1 1 0 01-1.4 0l-3.5-3.5a1 1 0 111.4-1.4l2.8 2.8 6.8-6.8a1 1 0 011.4 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service) => {
+            const cardClass =
+              "rounded-2xl border border-ink-200 dark:border-ink-800 p-7 hover:border-brand-600 hover:shadow-lg hover:shadow-brand-600/5 transition-all";
+            const content = (
+              <>
+                <h3 className="text-lg font-semibold text-ink-900 dark:text-white">{service.title}</h3>
+                <p className="mt-3 text-sm text-ink-500 dark:text-ink-400">{service.description}</p>
+                <ul className="mt-5 space-y-2.5">
+                  {service.features.map((feature) => (
+                    <li key={feature} className="flex items-start gap-2.5 text-sm text-ink-700 dark:text-ink-200">
+                      <svg
+                        className="mt-0.5 h-4 w-4 shrink-0 text-brand-600"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.7 5.3a1 1 0 010 1.4l-7.5 7.5a1 1 0 01-1.4 0l-3.5-3.5a1 1 0 111.4-1.4l2.8 2.8 6.8-6.8a1 1 0 011.4 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            );
+
+            return service.href ? (
+              <Link key={service.title} href={service.href} className={cardClass}>
+                {content}
+              </Link>
+            ) : (
+              <div key={service.title} className={cardClass}>
+                {content}
+              </div>
+            );
+          })}
 
           <Link
             href="/nura"

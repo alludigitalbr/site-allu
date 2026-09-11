@@ -8,6 +8,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     { path: "", priority: 1, changeFrequency: "weekly" as const },
     { path: "/nura", priority: 0.9, changeFrequency: "weekly" as const },
+    { path: "/servicos/infraestrutura-de-redes", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/servicos/suporte-manutencao", priority: 0.7, changeFrequency: "monthly" as const },
     { path: "/nura/crm-whatsapp", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/nura/recursos", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/nura/ia", priority: 0.7, changeFrequency: "monthly" as const },

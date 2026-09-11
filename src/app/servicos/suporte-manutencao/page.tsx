@@ -89,9 +89,8 @@ export default function SuporteManutencaoPage() {
               Tokai — instrumentos musicais
             </h2>
             <p className="mt-4 text-ink-500 dark:text-ink-400">
-              Mantemos a rede e o SAC da Tokai em operação: manutenção da infraestrutura para 35
-              máquinas e um dashboard operacional com visibilidade total do funil de atendimento —
-              161 atendimentos por mês monitorados em tempo real.
+              Mantemos a infraestrutura e a rede de computadores da Tokai — mais de 35 máquinas,
+              servidores, wi-fi, backup, cloud e etc.
             </p>
           </div>
         </section>

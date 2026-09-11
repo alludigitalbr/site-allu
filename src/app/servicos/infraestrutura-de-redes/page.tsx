@@ -89,9 +89,9 @@ export default function InfraestruturaDeRedesPage() {
               Tokai — instrumentos musicais
             </h2>
             <p className="mt-4 text-ink-500 dark:text-ink-400">
-              Estruturamos e mantemos a rede da Tokai: servidor Linux com Samba configurado para
-              atender 35 máquinas, com organização de infraestrutura que sustenta o dia a dia da
-              operação sem depender de um técnico presencial constante.
+              Estruturamos e mantemos a rede da Tokai: servidor Linux com Samba configurado e VPN
+              para atender 35 máquinas, com organização de infraestrutura que sustenta o dia a dia
+              da operação, suporte dedicado.
             </p>
           </div>
         </section>

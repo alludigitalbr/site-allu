@@ -10,7 +10,7 @@ export default function Services() {
             Serviços
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-ink-900 dark:text-white">
-            Como entregamos os 4 pilares na prática
+            Principais frentes de serviço
           </h2>
         </div>
 
@@ -62,7 +62,7 @@ export default function Services() {
             <span className="inline-flex items-center rounded-full bg-white/15 px-2.5 py-1 text-xs font-semibold w-fit">
               Nura
             </span>
-            <h3 className="mt-3 text-lg font-semibold">Plataforma de Atendimento com IA</h3>
+            <h3 className="mt-3 text-lg font-semibold">Plataforma de Atendimento do WhatsApp com IA</h3>
 
             <p className="mt-4 pt-4 border-t border-white/15 text-xs font-semibold uppercase tracking-wide text-white/80">
               Veja o que você e sua equipe não precisam mais fazer!

@@ -1,21 +1,11 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import {
-  portfolioCases,
-  portfolioPillars,
-  portfolioStats,
-  type PortfolioPillarSlug,
-} from "@/lib/site-data";
+import { useState } from "react";
+import { portfolioCases, portfolioPillars } from "@/lib/site-data";
+import { WhatsappIcon } from "@/components/SocialIcons";
 
 export default function Portfolio() {
-  const [activeFilter, setActiveFilter] = useState<PortfolioPillarSlug | "todos">("todos");
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
-
-  const filteredCases = useMemo(() => {
-    if (activeFilter === "todos") return portfolioCases;
-    return portfolioCases.filter((c) => c.pillars.includes(activeFilter));
-  }, [activeFilter]);
 
   function toggle(slug: string) {
     setExpanded((prev) => {
@@ -34,59 +24,20 @@ export default function Portfolio() {
             Portfólio
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-ink-900 dark:text-white">
-            {portfolioCases.length} cases reais de agentes de IA e atendimento em produção
+            + de 10 cases reais de automações e plataformas digitais usando IA
           </h2>
-          <p className="mt-4 text-ink-500 dark:text-ink-400">
-            Organizados pelos 4 pilares de atuação da Allu Digital. Filtre por pilar ou explore
-            cada case para ver contexto, abordagem e resultados.
-          </p>
         </div>
 
-        {/* Stats */}
-        <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4">
-          {portfolioStats.map((stat) => (
-            <div
-              key={stat.label}
-              className="rounded-xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 p-4"
-            >
-              <div className="text-xl font-bold text-brand-600">{stat.value}</div>
-              <div className="mt-1 text-xs text-ink-500 dark:text-ink-400 leading-snug">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-
-        {/* Filters */}
-        <div className="mt-12 flex flex-wrap gap-2">
-          <button
-            type="button"
-            onClick={() => setActiveFilter("todos")}
-            className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-              activeFilter === "todos"
-                ? "gradient-brand text-white"
-                : "bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 text-ink-700 dark:text-ink-200 hover:border-brand-600"
-            }`}
-          >
-            Todos os pilares
-          </button>
-          {portfolioPillars.map((pillar) => (
-            <button
-              key={pillar.slug}
-              type="button"
-              onClick={() => setActiveFilter(pillar.slug)}
-              className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                activeFilter === pillar.slug
-                  ? "gradient-brand text-white"
-                  : "bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 text-ink-700 dark:text-ink-200 hover:border-brand-600"
-              }`}
-            >
-              {pillar.title}
-            </button>
-          ))}
+        <div className="mt-8 inline-flex items-center gap-3 rounded-xl border border-ink-200 dark:border-ink-800 bg-white dark:bg-ink-900 px-4 py-3">
+          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#25D366] text-white">
+            <WhatsappIcon className="h-6 w-6" />
+          </span>
+          <p className="text-sm font-bold text-ink-900 dark:text-white">WhatsApp Tech Partner</p>
         </div>
 
         {/* Cases */}
-        <div className="mt-8 grid gap-5">
-          {filteredCases.map((c) => {
+        <div className="mt-10 grid gap-5">
+          {portfolioCases.map((c) => {
             const isOpen = expanded.has(c.slug);
             return (
               <div

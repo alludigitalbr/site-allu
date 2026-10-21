@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { contact } from "@/lib/site-data";
+import { SocialLinks } from "@/components/SocialIcons";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -11,18 +12,13 @@ export default function Footer() {
           <h3 className="text-white font-semibold mb-4">Serviços</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/#servicos" className="hover:text-white transition-colors">
-                Agentes de IA
+              <a href="/#parcerias" className="hover:text-white transition-colors">
+                Parcerias
               </a>
             </li>
             <li>
               <a href="/#servicos" className="hover:text-white transition-colors">
-                Consultoria PO
-              </a>
-            </li>
-            <li>
-              <a href="/#servicos" className="hover:text-white transition-colors">
-                Automações
+                Consultoria de TI e IA
               </a>
             </li>
             <li>
@@ -86,23 +82,8 @@ export default function Footer() {
               </a>
             </li>
             <li>{contact.hours}</li>
-            <li className="flex gap-4 pt-1">
-              <a
-                href={contact.instagramUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition-colors"
-              >
-                Instagram
-              </a>
-              <a
-                href={contact.linkedinUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition-colors"
-              >
-                LinkedIn
-              </a>
+            <li className="pt-2">
+              <SocialLinks className="text-ink-200" />
             </li>
           </ul>
         </div>

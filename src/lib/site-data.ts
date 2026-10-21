@@ -22,85 +22,40 @@ export const navLinks = [
   { label: "Contato", href: "#contato" },
 ];
 
-export const heroStats = [
-  { value: "+40", label: "clientes ativos gerados para um único produto" },
-  { value: "R$180 mil/mês", label: "de faturamento médio gerado para cliente" },
-  { value: "24h → 10min", label: "leadtime de atendimento" },
-];
-
-export const values = [
+export const partnerModels = [
   {
-    title: "Inovação",
-    description:
-      "Sempre à frente, explorando as últimas tendências em IA e no-code.",
+    label: "Modelo 1",
+    title: "Comissão por indicação",
+    highlight: "Você indica, nós entregamos",
+    description: "Você indica o cliente e a Allu Digital desenvolve o projeto.",
+    example: "Exemplo: projeto de R$10 mil, você recebe R$3 mil.",
   },
   {
-    title: "Excelência",
-    description:
-      "Buscamos a perfeição em tudo o que fazemos, da estratégia à entrega.",
+    label: "Modelo 2",
+    title: "Revenda com preço parceiro",
+    highlight: "Margem definida por você",
+    description: "Você adquire com preço de parceiro e revende pelo valor que quiser.",
+    example: "Exemplo: compra por R$10 mil e vende por R$20 mil.",
   },
   {
-    title: "Parceria",
-    description:
-      "Vemos nossos clientes como parceiros estratégicos para o sucesso mútuo.",
-  },
-];
-
-export const problemPillars = [
-  {
-    title: "Atendimento que não escala",
-    description:
-      "agentes de IA (voz e texto) que qualificam, respondem e só escalam para um humano quando realmente precisa.",
-  },
-  {
-    title: "Cobrança e processos repetitivos manuais",
-    description:
-      "automações que eliminam tempo humano gasto em tarefas operacionais (2ª via, régua de cobrança, análise de documentos e editais).",
-  },
-  {
-    title: "Produto sem dono técnico",
-    description:
-      "arquitetura, infraestrutura e gestão ágil para empresas que precisam de um braço técnico completo, não só um desenvolvedor.",
-  },
-  {
-    title: "Time que não se sustenta sozinho",
-    description:
-      "formação, documentação e onboarding para a operação continuar rodando sem depender de mim.",
+    label: "Modelo 3",
+    title: "White label completo",
+    highlight: "Com a sua marca",
+    description: "Desenvolvemos nos bastidores e você entrega com a sua identidade.",
+    example: "Ideal para agências e consultorias ampliarem o portfólio.",
   },
 ];
 
 export const services = [
   {
-    title: "Desenvolvimento de Agentes de IA",
+    title: "Consultoria de TI e IA",
     description:
-      "Criamos agentes de IA personalizados com memória contextual, assistentes de voz síncronos e gestão autônoma de funil.",
+      "Mapeamento de processos, técnicas de design thinking (inception) e gestão de projetos, com especialistas em processos para melhorar os indicadores do negócio usando tecnologia, automação e integração.",
     features: [
-      "Memória do Agente",
-      "Assistente de Voz Síncrono",
-      "Régua de Cadência Inteligente",
-      "Integração Omnichannel",
-    ],
-  },
-  {
-    title: "Consultoria e Gestão de Produto (PO)",
-    description:
-      "Atuamos como Product Owners, organizando backlog e alinhando desenvolvimento com estratégia de negócio.",
-    features: [
-      "Diagnóstico e Desenho da Solução",
-      "Implementação e Integração",
-      "Acompanhamento e Otimização",
-      "Tradução de Requisitos",
-    ],
-  },
-  {
-    title: "Automações No-Code/Low-Code",
-    description:
-      "Especialistas em automação de processos utilizando plataformas como n8n, Supabase, OpenAI e outras tecnologias.",
-    features: [
-      "Implantação de CRM",
-      "Automações com n8n",
-      "Engenharia de Prompt",
-      "Integração de APIs",
+      "Mapeamento de processos",
+      "Design thinking (inception)",
+      "Gestão de projetos",
+      "Automação, integração e IA",
     ],
   },
   {
@@ -351,15 +306,4 @@ export const portfolioCases: PortfolioCase[] = [
     results:
       "Atendimento estruturado no Nura, com respostas rápidas e organização por fila substituindo o WhatsApp pessoal disperso entre atendentes.",
   },
-];
-
-export const portfolioStats = [
-  { value: "+10", label: "projetos entregues, de startups a empresas estabelecidas" },
-  { value: "+40", label: "clientes ativos gerados para um único produto" },
-  { value: "R$180 mil/mês", label: "de faturamento médio gerado para cliente" },
-  { value: "24h → 10min", label: "leadtime de atendimento" },
-  { value: "1 semana → 5min", label: "análise de editais" },
-  { value: "+85K", label: "mensagens recebidas" },
-  { value: "+52K", label: "mensagens enviadas" },
-  { value: "+20", label: "agentes SDR desenvolvidos para clientes" },
 ];

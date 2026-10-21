@@ -1,5 +1,3 @@
-import { heroStats } from "@/lib/site-data";
-
 export default function Hero() {
   return (
     <section id="inicio" className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
@@ -14,11 +12,8 @@ export default function Hero() {
             A Inteligência Artificial que realmente <span className="gradient-brand-text">trabalha pela sua empresa</span>
           </h1>
           <p className="mt-6 text-lg text-ink-500 dark:text-ink-400 max-w-2xl">
-            Para donos de empresas de pequeno e médio porte que ainda dependem de atendimento,
-            cobrança, triagem ou análise de documentos feitos manualmente — se o processo segue um
-            padrão repetitivo, ele pode ser automatizado. A Allu Digital projeta e implanta agentes
-            de IA que assumem essas tarefas, com a arquitetura, o time e o produto necessários para
-            sustentar a operação em produção.
+            Para empresas que querem melhorar a eficiência, identificar oportunidades de
+            automação e melhorar os processos de atendimento, financeiro, SAC ou comercial com IA.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-4">
@@ -35,16 +30,6 @@ export default function Hero() {
               Ver Portfólio
             </a>
           </div>
-
-          <dl className="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-            {heroStats.map((stat) => (
-              <div key={stat.label} className="border-l-2 border-brand-600 pl-4">
-                <dt className="sr-only">{stat.label}</dt>
-                <dd className="text-2xl font-bold text-ink-900 dark:text-white">{stat.value}</dd>
-                <dd className="text-sm text-ink-500 dark:text-ink-400 mt-1">{stat.label}</dd>
-              </div>
-            ))}
-          </dl>
         </div>
       </div>
     </section>

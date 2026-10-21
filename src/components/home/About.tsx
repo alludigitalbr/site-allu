@@ -1,4 +1,11 @@
-import { problemPillars, values } from "@/lib/site-data";
+import { whatsappLink } from "@/lib/site-data";
+
+const whatWeDo = [
+  "Mapeamento e redesenho de processos",
+  "Automação de tarefas e fluxos de trabalho",
+  "Soluções com IA generativa (agentes, assistentes e chatbots treinados com os dados da sua empresa)",
+  "Integração entre sistemas, como ERP, CRM e outras ferramentas do dia a dia",
+];
 
 export default function About() {
   return (
@@ -9,48 +16,77 @@ export default function About() {
             Sobre Nós
           </span>
           <p className="mt-4 text-xl sm:text-2xl font-semibold text-ink-900 dark:text-white leading-snug">
-            Para donos de empresas de pequeno e médio porte que ainda dependem de processos
-            manuais e repetitivos — atendimento, cobrança, triagem, análise de documentos — a Allu
-            Digital projeta e implanta agentes de IA que assumem essas tarefas, com a arquitetura,
-            o time e o produto necessários para sustentar a operação em produção.
-          </p>
-          <p className="mt-5 text-ink-500 dark:text-ink-400">
-            Se o processo segue um padrão, ele pode ser automatizado. Com anos de experiência no
-            mercado de tecnologia e um profundo entendimento das dinâmicas B2B, a Allu Digital
-            traduz as inovações da IA em soluções práticas e mensuráveis — não em promessas
-            abstratas.
-          </p>
-          <p className="mt-5 inline-flex items-center rounded-lg border-l-4 border-brand-500 bg-white dark:bg-ink-900 pl-4 pr-5 py-3 text-base font-semibold text-ink-900 dark:text-white">
-            Aquilo que você não mede, você não gerencia.
+            Somos uma consultoria de Inteligência Artificial e automação de processos, com sede
+            em Osasco (SP). Ajudamos empresas a entender como seus processos funcionam hoje,
+            identificar gargalos e transformar operações manuais em fluxos inteligentes,
+            integrados e escaláveis.
           </p>
         </div>
 
-        <div className="mt-12 grid sm:grid-cols-3 gap-6">
-          {values.map((value) => (
-            <div
-              key={value.title}
-              className="rounded-xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 p-6"
+        <div className="mt-14 grid lg:grid-cols-2 gap-x-14 gap-y-12">
+          <div>
+            <h3 className="text-xl font-bold text-ink-900 dark:text-white">O que fazemos</h3>
+            <ul className="mt-5 space-y-3">
+              {whatWeDo.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-ink-700 dark:text-ink-200">
+                  <svg
+                    className="mt-1 h-4 w-4 shrink-0 text-brand-600"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.7 5.3a1 1 0 010 1.4l-7.5 7.5a1 1 0 01-1.4 0l-3.5-3.5a1 1 0 111.4-1.4l2.8 2.8 6.8-6.8a1 1 0 011.4 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-ink-900 dark:text-white">Nossa experiência</h3>
+            <p className="mt-5 text-ink-500 dark:text-ink-400">
+              A Allu Digital foi fundada por Marcelo Viviani Junior, que tem mais de 20 anos de
+              experiência em TI. Nesse período, ele atuou em projetos para grandes empresas dos
+              setores financeiro, de meios de pagamento e de tecnologia, e liderou times de
+              Product Owners. Hoje ele conduz a arquitetura das soluções de automação e IA da Allu
+              Digital, junto a um time de desenvolvedores.
+            </p>
+            <p className="mt-4 text-ink-500 dark:text-ink-400">
+              Em 2 anos, já entregamos projetos para empresas de diversos setores, como
+              imobiliárias, agências de viagens, construtora e incorporadora, indústria de
+              instrumentos musicais, startups, transportadora e prestadores de serviços, sempre
+              com o mesmo foco: aumentar a eficiência e otimizar recursos sem complicação.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-ink-900 dark:text-white">Como trabalhamos</h3>
+            <p className="mt-5 text-ink-500 dark:text-ink-400">
+              Primeiro entendemos o seu negócio, depois escolhemos a tecnologia. Cada projeto
+              começa com um diagnóstico do processo, segue com uma solução sob medida e termina
+              com acompanhamento para garantir que a automação realmente gere eficiência.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border-l-4 border-brand-500 bg-white dark:bg-ink-900 p-6 self-start">
+            <h3 className="text-xl font-bold text-ink-900 dark:text-white">Vamos conversar?</h3>
+            <p className="mt-3 text-ink-500 dark:text-ink-400">
+              Se a sua equipe gasta tempo demais com tarefas que poderiam rodar sozinhas, fale
+              com a gente.
+            </p>
+            <a
+              href={whatsappLink("Olá! Quero conversar sobre automação de processos e IA na minha empresa.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex items-center justify-center rounded-lg gradient-brand px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-600/25 hover:-translate-y-0.5 transition-transform"
             >
-              <h3 className="font-semibold text-ink-900 dark:text-white">{value.title}</h3>
-              <p className="mt-2 text-sm text-ink-500 dark:text-ink-400">{value.description}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-16">
-          <h3 className="text-2xl font-bold text-ink-900 dark:text-white">O que a Allu resolve</h3>
-          <div className="mt-8 grid sm:grid-cols-2 gap-6">
-            {problemPillars.map((pillar, i) => (
-              <div key={pillar.title} className="flex gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg gradient-brand text-white font-bold">
-                  {i + 1}
-                </span>
-                <div>
-                  <h4 className="font-semibold text-ink-900 dark:text-white">{pillar.title}</h4>
-                  <p className="mt-1 text-sm text-ink-500 dark:text-ink-400">{pillar.description}</p>
-                </div>
-              </div>
-            ))}
+              Falar com o time
+            </a>
           </div>
         </div>
       </div>

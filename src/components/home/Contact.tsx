@@ -2,6 +2,7 @@
 
 import { FormEvent } from "react";
 import { contact, whatsappLink } from "@/lib/site-data";
+import { SocialLinks } from "@/components/SocialIcons";
 
 export default function Contact() {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -61,29 +62,9 @@ export default function Contact() {
                 </dd>
               </div>
               <div>
-                <dt className="font-semibold text-ink-900 dark:text-white">Instagram</dt>
-                <dd>
-                  <a
-                    href={contact.instagramUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-brand-600 hover:underline"
-                  >
-                    {contact.instagramHandle}
-                  </a>
-                </dd>
-              </div>
-              <div>
-                <dt className="font-semibold text-ink-900 dark:text-white">LinkedIn</dt>
-                <dd>
-                  <a
-                    href={contact.linkedinUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-brand-600 hover:underline"
-                  >
-                    Marcelo Viviani Junior
-                  </a>
+                <dt className="font-semibold text-ink-900 dark:text-white mb-2">Redes sociais</dt>
+                <dd className="text-ink-700 dark:text-ink-200">
+                  <SocialLinks />
                 </dd>
               </div>
               <div>

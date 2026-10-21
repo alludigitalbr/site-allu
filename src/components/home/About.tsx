@@ -7,6 +7,59 @@ const whatWeDo = [
   "Integração entre sistemas, como ERP, CRM e outras ferramentas do dia a dia",
 ];
 
+const iconProps = {
+  className: "h-5 w-5",
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 1.8,
+  strokeLinecap: "round" as const,
+  strokeLinejoin: "round" as const,
+  "aria-hidden": true,
+};
+
+const howWeWork = [
+  {
+    title: "Diagnóstico",
+    description: "Mapeamos seus processos e identificamos os gargalos.",
+    icon: (
+      <svg {...iconProps}>
+        <circle cx="11" cy="11" r="7" />
+        <path d="M20 20l-3.5-3.5" />
+      </svg>
+    ),
+  },
+  {
+    title: "Solução sob medida",
+    description: "Desenhamos a automação ideal para a sua realidade.",
+    icon: (
+      <svg {...iconProps}>
+        <path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0012 3z" />
+      </svg>
+    ),
+  },
+  {
+    title: "Implementação",
+    description: "Colocamos tudo para rodar com o mínimo de impacto na rotina.",
+    icon: (
+      <svg {...iconProps}>
+        <circle cx="12" cy="12" r="3" />
+        <path d="M19.4 15a1.7 1.7 0 00.3 1.8l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.8-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 11-4 0v-.1a1.7 1.7 0 00-1.1-1.5 1.7 1.7 0 00-1.8.3l-.1.1a2 2 0 11-2.8-2.8l.1-.1a1.7 1.7 0 00.3-1.8 1.7 1.7 0 00-1.5-1H3a2 2 0 110-4h.1a1.7 1.7 0 001.5-1.1 1.7 1.7 0 00-.3-1.8l-.1-.1a2 2 0 112.8-2.8l.1.1a1.7 1.7 0 001.8.3H9a1.7 1.7 0 001-1.5V3a2 2 0 114 0v.1a1.7 1.7 0 001 1.5 1.7 1.7 0 001.8-.3l.1-.1a2 2 0 112.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.8V9a1.7 1.7 0 001.5 1H21a2 2 0 110 4h-.1a1.7 1.7 0 00-1.5 1z" />
+      </svg>
+    ),
+  },
+  {
+    title: "Acompanhamento",
+    description: "Medimos os resultados e ajustamos para gerar eficiência real.",
+    icon: (
+      <svg {...iconProps}>
+        <path d="M3 17l6-6 4 4 8-8" />
+        <path d="M14 7h7v7" />
+      </svg>
+    ),
+  },
+];
+
 export default function About() {
   return (
     <section id="sobre" className="py-20 lg:py-28 bg-ink-50 dark:bg-ink-950">
@@ -64,31 +117,50 @@ export default function About() {
               com o mesmo foco: aumentar a eficiência e otimizar recursos sem complicação.
             </p>
           </div>
+        </div>
 
-          <div>
-            <h3 className="text-xl font-bold text-ink-900 dark:text-white">Como trabalhamos</h3>
-            <p className="mt-5 text-ink-500 dark:text-ink-400">
-              Primeiro entendemos o seu negócio, depois escolhemos a tecnologia. Cada projeto
-              começa com um diagnóstico do processo, segue com uma solução sob medida e termina
-              com acompanhamento para garantir que a automação realmente gere eficiência.
-            </p>
+        <div className="mt-16">
+          <h3 className="text-2xl sm:text-3xl font-bold text-ink-900 dark:text-white">
+            Como trabalhamos
+          </h3>
+          <p className="mt-2 text-lg text-ink-500 dark:text-ink-400">
+            Primeiro entendemos o seu negócio, depois escolhemos a tecnologia.
+          </p>
+          <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {howWeWork.map((step, i) => (
+              <div
+                key={step.title}
+                className="rounded-2xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 p-6"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-50 dark:bg-brand-500/15 text-brand-600 dark:text-brand-400">
+                    {step.icon}
+                  </span>
+                  <span className="text-sm font-semibold text-ink-400">0{i + 1}</span>
+                </div>
+                <h4 className="mt-6 text-lg font-bold text-ink-900 dark:text-white">{step.title}</h4>
+                <p className="mt-2 text-sm text-ink-500 dark:text-ink-400">{step.description}</p>
+              </div>
+            ))}
           </div>
+        </div>
 
-          <div className="rounded-2xl border-l-4 border-brand-500 bg-white dark:bg-ink-900 p-6 self-start">
+        <div className="mt-12 rounded-2xl border-l-4 border-brand-500 bg-white dark:bg-ink-900 p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+          <div>
             <h3 className="text-xl font-bold text-ink-900 dark:text-white">Vamos conversar?</h3>
-            <p className="mt-3 text-ink-500 dark:text-ink-400">
+            <p className="mt-2 text-ink-500 dark:text-ink-400">
               Se a sua equipe gasta tempo demais com tarefas que poderiam rodar sozinhas, fale
               com a gente.
             </p>
-            <a
-              href={whatsappLink("Olá! Quero conversar sobre automação de processos e IA na minha empresa.")}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-5 inline-flex items-center justify-center rounded-lg gradient-brand px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-600/25 hover:-translate-y-0.5 transition-transform"
-            >
-              Falar com o time
-            </a>
           </div>
+          <a
+            href={whatsappLink("Olá! Quero conversar sobre automação de processos e IA na minha empresa.")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex shrink-0 items-center justify-center rounded-lg gradient-brand px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-600/25 hover:-translate-y-0.5 transition-transform"
+          >
+            Falar com o time
+          </a>
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { contact } from "@/lib/site-data";
-import { SocialLinks } from "@/components/SocialIcons";
+import { SocialLinks, WhatsappIcon } from "@/components/SocialIcons";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -76,8 +76,10 @@ export default function Footer() {
                 href={contact.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-white transition-colors"
+                aria-label={`Abrir WhatsApp: ${contact.whatsappDisplay}`}
+                className="inline-flex items-center gap-2 hover:text-white transition-colors"
               >
+                <WhatsappIcon className="h-5 w-5 text-[#25D366]" />
                 {contact.whatsappDisplay}
               </a>
             </li>

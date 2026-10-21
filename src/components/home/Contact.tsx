@@ -2,7 +2,7 @@
 
 import { FormEvent } from "react";
 import { contact, whatsappLink } from "@/lib/site-data";
-import { SocialLinks } from "@/components/SocialIcons";
+import { SocialLinks, WhatsappIcon } from "@/components/SocialIcons";
 
 export default function Contact() {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -47,8 +47,10 @@ export default function Contact() {
                     href={contact.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-brand-600 hover:underline"
+                    aria-label={`Abrir WhatsApp: ${contact.whatsappDisplay}`}
+                    className="inline-flex items-center gap-2 text-brand-600 hover:underline"
                   >
+                    <WhatsappIcon className="h-5 w-5 text-[#25D366]" />
                     {contact.whatsappDisplay}
                   </a>
                 </dd>

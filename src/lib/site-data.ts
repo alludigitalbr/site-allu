@@ -148,7 +148,8 @@ export interface PortfolioCase {
 export const portfolioCases: PortfolioCase[] = [
   {
     slug: "watrix",
-    title: "Watrix — CRM para Imobiliárias",
+    title: "Automações, Integrações e Desenvolvimento do Cérebro da IA (Plataforma Watrix CRM)",
+    client: "Startup do setor imobiliário",
     pillars: ["arquitetura", "automacao", "produto", "times"],
     context:
       "Startup criada do zero, fundada por um empreendedor com forte visão comercial mas sem estrutura técnica. A Allu Digital entrou como braço técnico completo do negócio, responsável por materializar e desenvolver o produto.",
@@ -188,7 +189,7 @@ export const portfolioCases: PortfolioCase[] = [
   },
   {
     slug: "smart-crm",
-    title: "Smart CRM — Evolução de CRM B2B com Agentes de IA",
+    title: "Evolução de CRM B2B com Agentes de IA",
     pillars: ["arquitetura", "automacao", "produto"],
     context:
       "CRM B2B voltado para empresas que precisam automatizar atendimentos com agentes de IA, integrando Meta, API Oficial do WhatsApp ou Evolution API.",
@@ -197,14 +198,14 @@ export const portfolioCases: PortfolioCase[] = [
       "desenvolvimento de fluxo de sincronização de arquivos XML para imobiliária, backup de workflows e credentials do n8n, fluxo de agendamento de visitas integrado ao Google Calendar, backup automatizado do Supabase, e migração completa de serviços e DNS da VPS Hetzner para a Hostinger.",
     tools: ["Supabase", "n8n (Docker/Portainer)", "Redis", "Cloudflare", "VPS"],
     results:
-      "Documentação da entrega, treinamento dos devs internos da Smart CRM, novas features habilitadas para a base de clientes, retenção de clientes e redução de churn.",
+      "Documentação da entrega, treinamento dos devs internos do cliente, novas features habilitadas para a base de clientes, retenção de clientes e redução de churn.",
   },
   {
     slug: "ai-call-flow",
     title: "AI Call Flow — Produto de Ligações com IA (Inbound & Outbound)",
     pillars: ["automacao", "produto"],
     context:
-      "Novo produto voltado a clientes high-ticket, aproveitando a base existente da Smart CRM e abrindo espaço para novos clientes.",
+      "Novo produto voltado a clientes high-ticket, aproveitando a base existente de clientes do CRM B2B e abrindo espaço para novos clientes.",
     challenge:
       "Criar um sistema completo de ligações com IA, cobrindo dois fluxos: Inbound — cliente liga, a IA atende, faz triagem e qualificação, e direciona para atendimento humano (usando call forward do celular para um número da IA); Outbound — lead preenche um formulário na web e a IA realiza a ligação diretamente.",
     tools: ["Twilio", "Retell", "OpenAI", "SIP Trunk", "n8n"],
@@ -213,7 +214,8 @@ export const portfolioCases: PortfolioCase[] = [
   },
   {
     slug: "s2-viagens-mvp",
-    title: "S2 Viagens — MVP de Inteligência Comercial",
+    title: "MVP de Inteligência Comercial",
+    client: "Agência de viagens",
     pillars: ["produto", "automacao"],
     challenge:
       "Gerir a entrega de um MVP para detectar inatividade nos atendimentos, identificar oportunidades de pacotes aéreos, recomendar follow-ups e sumarizar conversas.",
@@ -222,7 +224,8 @@ export const portfolioCases: PortfolioCase[] = [
   },
   {
     slug: "s2-viagens-sdr",
-    title: "S2 Viagens — Agentes SDR via Helena CRM",
+    title: "Agentes SDR via Helena CRM",
+    client: "Agência de viagens",
     pillars: ["automacao", "produto"],
     challenge:
       "Atuar como gestor e consultor de agentes de IA dentro da plataforma Helena CRM, com suporte contínuo às integrações e desenvolvimento de 3 tipos de SDR: SDR por vendedor (23 assistentes, um por vendedor), SDR passivo (inbound) e SDR ativo (outbound).",
@@ -249,8 +252,8 @@ export const portfolioCases: PortfolioCase[] = [
   },
   {
     slug: "greenville",
-    title: "Greenville — Automação de Atendimento e Cobrança",
-    client: "Loteamento e construtora Greenville",
+    title: "Automação de Atendimento e Cobrança",
+    client: "Loteamento e construtora",
     pillars: ["automacao", "atendimento"],
     challenge:
       "Automatizar atendimentos manuais e repetitivos — 2ª via de contrato, 2ª via de boleto e extrato de saldo devedor — e criar uma régua de cobrança automática para clientes inadimplentes.",
@@ -259,7 +262,7 @@ export const portfolioCases: PortfolioCase[] = [
   },
   {
     slug: "eliezer",
-    title: "Eliezer — Automação de Análise de Editais de Licitação Pública (Plataforma Departamento Leve)",
+    title: "Automação de Análise de Editais de Licitação Pública (Plataforma Departamento Leve)",
     pillars: ["automacao"],
     context:
       "Um SaaS para ajudar empresários a ganhar licitação: encontre oportunidades, analise editais com IA, automatize a preparação de documentos e capacite sua equipe. Tudo em uma única plataforma. Antes, o processo era manual e repetitivo: buscar editais em portais do governo, analisar um a um, identificar atestados exigidos e verificar documentações e declarações necessárias.",
@@ -271,29 +274,27 @@ export const portfolioCases: PortfolioCase[] = [
   {
     slug: "tokai",
     title: "Infraestrutura e Manutenção da Rede de Computadores",
-    client: "Tokai, instrumentos musicais",
-    pillars: ["arquitetura", "automacao", "produto", "atendimento"],
+    client: "Indústria de instrumentos musicais",
+    pillars: ["arquitetura"],
     approach: [
       {
         label: "Manutenção de rede",
         text: "servidor Linux com Samba configurado para atender 35 máquinas.",
       },
-      {
-        label: "Agente de atendimento do SAC",
-        text: "agente de IA para pré-atendimento, identificando se o produto está dentro ou fora da garantia, quando o problema começou, e o tipo de cliente (lojista ou consumidor final) — usando o CRM próprio da Allu Digital. Desenvolvimento de um dashboard operacional para acompanhamento de indicadores pela liderança.",
-      },
-      {
-        label: "Dashboard de monitoramento de preços",
-        text: "buscador automático de preços dos produtos Tokai na internet, para identificar quem está cumprindo a Política de Preço Mínimo (PMS).",
-      },
     ],
-    results:
-      "Dashboard operacional em produção com visibilidade total do funil de atendimento — +500 atendimentos realizados no mês, com status monitorados em tempo real (em andamento com IA, com humano, aguardando peça, aguardando cliente, etc.).",
+  },
+  {
+    slug: "monitoramento-precos",
+    title: "Dashboard de Monitoramento de Preços",
+    client: "Indústria de instrumentos musicais",
+    pillars: ["automacao", "produto"],
+    approachParagraph:
+      "buscador automático de preços dos produtos na internet, para identificar quem está cumprindo a Política de Preço Mínimo (PMS).",
   },
   {
     slug: "amanda-cabral",
-    title: "Clínica Odontológica Amanda Cabral — Atendimento via WhatsApp",
-    client: "Clínica Odontológica Amanda Cabral",
+    title: "Organização dos Atendimentos via WhatsApp",
+    client: "Clínica odontológica",
     pillars: ["atendimento"],
     challenge:
       "Centralizar o atendimento aos pacientes pelo WhatsApp, organizando agendamentos e follow-ups que antes eram feitos manualmente pela recepção.",
@@ -302,11 +303,13 @@ export const portfolioCases: PortfolioCase[] = [
   },
   {
     slug: "sac-tokai",
-    title: "SAC Tokai — Atendimento via WhatsApp",
-    client: "Tokai, instrumentos musicais",
+    title: "SAC - Organização dos Atendimentos do WhatsApp",
+    client: "Indústria de instrumentos musicais",
     pillars: ["atendimento"],
     challenge:
       "Centralizar e organizar mais de 600 atendimentos por mês dos clientes de pós-venda.",
+    approachParagraph:
+      "agente de IA para pré-atendimento, identificando se o produto está dentro ou fora da garantia, quando o problema começou e o tipo de cliente (lojista ou consumidor final), usando o CRM próprio da Allu Digital, com dashboard operacional para acompanhamento de indicadores pela liderança.",
     results:
       "Mais clientes sendo atendidos e maior clareza da etapa do fluxo de atendimento.",
     resultsList: [

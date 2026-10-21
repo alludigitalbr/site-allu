@@ -16,8 +16,8 @@ export default function About() {
             Sobre Nós
           </span>
           <p className="mt-4 text-xl sm:text-2xl font-semibold text-ink-900 dark:text-white leading-snug">
-            Somos uma consultoria de Inteligência Artificial e automação de processos, com sede
-            em Osasco (SP). Ajudamos empresas a entender como seus processos funcionam hoje,
+            Somos uma consultoria de Inteligência Artificial e automação de processos.
+            Ajudamos empresas a entender como seus processos funcionam hoje,
             identificar gargalos e transformar operações manuais em fluxos inteligentes,
             integrados e escaláveis.
           </p>

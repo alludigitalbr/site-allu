@@ -70,6 +70,7 @@ export const services = [
       "Deploy automatizado em servidores na nuvem",
       "Gestão ágil com sprints e tasks no Jira/Asana",
     ],
+    href: "/servicos/consultoria-desenvolvimento",
   },
   {
     title: "Infraestrutura e Manutenção da Rede de Computadores",

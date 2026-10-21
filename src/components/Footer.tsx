@@ -22,6 +22,11 @@ export default function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/servicos/consultoria-desenvolvimento" className="hover:text-white transition-colors">
+                Consultoria em Desenvolvimento
+              </Link>
+            </li>
+            <li>
               <Link href="/servicos/infraestrutura-manutencao-rede" className="hover:text-white transition-colors">
                 Infraestrutura e Manutenção da Rede
               </Link>

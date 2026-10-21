@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "", priority: 1, changeFrequency: "weekly" as const },
     { path: "/nura", priority: 0.9, changeFrequency: "weekly" as const },
     { path: "/servicos/consultoria-ti-ia", priority: 0.8, changeFrequency: "monthly" as const },
+    { path: "/servicos/consultoria-desenvolvimento", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/servicos/infraestrutura-manutencao-rede", priority: 0.7, changeFrequency: "monthly" as const },
     { path: "/nura/crm-whatsapp", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/nura/recursos", priority: 0.8, changeFrequency: "monthly" as const },

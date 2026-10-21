@@ -18,7 +18,7 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/servicos/consultoria-ti-ia" className="hover:text-white transition-colors">
-                Consultoria de TI e IA
+                Consultoria de IA
               </Link>
             </li>
             <li>

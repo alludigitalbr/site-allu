@@ -11,7 +11,7 @@ import {
 } from "@/lib/consultoria-data";
 
 export const metadata: Metadata = {
-  title: "Consultoria de TI e IA — Allu Digital",
+  title: "Consultoria de IA — Allu Digital",
   description:
     "Diagnóstico de TI, automação de processos, soluções com Inteligência Artificial e integração de sistemas. Pacote de 10h de consultoria por R$1.500.",
 };
@@ -37,7 +37,7 @@ export default function ConsultoriaPage() {
           <div aria-hidden className="absolute inset-0 -z-10 gradient-mesh bg-white dark:bg-ink-950" />
           <div className="mx-auto max-w-3xl px-5">
             <span className="text-sm font-semibold text-brand-600 dark:text-brand-400 uppercase tracking-wide">
-              Consultoria de TI e IA
+              Consultoria de IA
             </span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold tracking-tight text-ink-900 dark:text-white">
               Organize a tecnologia da sua empresa e use IA com resultado
@@ -51,7 +51,7 @@ export default function ConsultoriaPage() {
                 Ver pacotes
               </a>
               <a
-                href={whatsappLink("Olá! Quero saber mais sobre a consultoria de TI e IA da Allu Digital.")}
+                href={whatsappLink("Olá! Quero saber mais sobre a consultoria de IA da Allu Digital.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-lg border border-ink-200 dark:border-ink-800 bg-white dark:bg-ink-900 px-7 py-3.5 text-sm font-semibold text-ink-900 dark:text-white hover:border-brand-600 hover:text-brand-600 transition-colors"
@@ -131,7 +131,7 @@ export default function ConsultoriaPage() {
                 <h3 className="mt-4 text-3xl font-bold">10 horas</h3>
                 <p className="mt-2 text-4xl font-bold">R$1.500</p>
                 <p className="mt-4 text-sm text-white/85">
-                  Horas de consultoria de TI e IA para diagnóstico, planejamento, automação ou
+                  Horas de consultoria de IA para diagnóstico, planejamento, automação ou
                   qualquer um dos serviços desta página.
                 </p>
                 <a

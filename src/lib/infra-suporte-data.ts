@@ -31,15 +31,6 @@ export const infraFeatures = [
   },
 ];
 
-export const infraBeneficios = [
-  { title: "Redução de custos", description: "Infraestrutura otimizada evita retrabalho e desperdício de equipamento." },
-  { title: "Performance e estabilidade", description: "Rede projetada pra aguentar o uso real da operação, sem gargalo." },
-  { title: "Segurança de dados", description: "Rede organizada e segmentada reduz superfície de risco." },
-  { title: "Escalabilidade", description: "Infraestrutura pensada pra crescer junto com a empresa, sem precisar refazer do zero." },
-  { title: "Suporte especializado", description: "Time técnico disponível para dúvidas, ajustes e expansão da rede." },
-  { title: "Tecnologia atualizada", description: "Equipamentos e práticas alinhados com o que há de mais atual no mercado." },
-];
-
 export const suporteIntro =
   'Computador lento, rede caindo, arquivos espalhados e colaboradores que não conseguem acessar os sistemas de casa. Cada problema desses custa tempo e dinheiro. A Alludigital cuida de toda a estrutura de TI da sua empresa, dos computadores aos servidores, para que você tenha uma operação estável, segura e pronta para crescer.';
 

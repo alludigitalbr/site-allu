@@ -22,13 +22,8 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/servicos/infraestrutura-de-redes" className="hover:text-white transition-colors">
-                Infraestrutura de Redes
-              </Link>
-            </li>
-            <li>
-              <Link href="/servicos/suporte-manutencao" className="hover:text-white transition-colors">
-                Suporte e Manutenção
+              <Link href="/servicos/infraestrutura-manutencao-rede" className="hover:text-white transition-colors">
+                Infraestrutura e Manutenção da Rede
               </Link>
             </li>
             <li>

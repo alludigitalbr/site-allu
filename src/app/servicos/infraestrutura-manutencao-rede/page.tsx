@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { whatsappLink } from "@/lib/site-data";
 import {
+  infraFeatures,
   suporteBeneficios,
   suporteFeatures,
   suporteIntro,
@@ -12,10 +13,13 @@ import {
 } from "@/lib/infra-suporte-data";
 
 export const metadata: Metadata = {
-  title: "Suporte e Manutenção de TI — Allu Digital",
+  title: "Infraestrutura e Manutenção da Rede de Computadores — Allu Digital",
   description:
-    "Suporte técnico remoto e presencial, manutenção, redes, servidores, VPN, backup e monitoramento contínuo. Avulso ou contrato mensal com valor fixo.",
+    "Cabeamento estruturado, redes wi-fi, servidores, VPN, backup, suporte técnico remoto e presencial e manutenção preventiva e corretiva. Avulso ou contrato mensal.",
+  alternates: { canonical: "/servicos/infraestrutura-manutencao-rede" },
 };
+
+const infraGroup = infraFeatures.filter((f) => f.title !== "Instalação e gestão de servidores");
 
 function Check() {
   return (
@@ -29,7 +33,16 @@ function Check() {
   );
 }
 
-export default function SuporteManutencaoPage() {
+function FeatureCard({ title, description }: { title: string; description: string }) {
+  return (
+    <div className="rounded-2xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 p-6">
+      <h4 className="font-semibold text-ink-900 dark:text-white">{title}</h4>
+      <p className="mt-2 text-sm text-ink-500 dark:text-ink-400">{description}</p>
+    </div>
+  );
+}
+
+export default function InfraestruturaManutencaoPage() {
   return (
     <>
       <Header />
@@ -38,14 +51,14 @@ export default function SuporteManutencaoPage() {
           <div aria-hidden className="absolute inset-0 -z-10 gradient-mesh bg-white dark:bg-ink-950" />
           <div className="mx-auto max-w-3xl px-5">
             <span className="text-sm font-semibold text-brand-600 dark:text-brand-400 uppercase tracking-wide">
-              Suporte e manutenção
+              Infraestrutura e manutenção
             </span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold tracking-tight text-ink-900 dark:text-white">
-              Sua operação de TI sempre no ar
+              Infraestrutura e Manutenção da Rede de Computadores
             </h1>
             <p className="mt-5 text-lg text-ink-500 dark:text-ink-400">{suporteIntro}</p>
             <a
-              href={whatsappLink("Olá! Quero saber mais sobre suporte e manutenção com a Allu Digital.")}
+              href={whatsappLink("Olá! Quero saber mais sobre infraestrutura e manutenção da rede de computadores com a Allu Digital.")}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-8 inline-flex items-center justify-center rounded-lg gradient-brand px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand-600/25 hover:-translate-y-0.5 transition-transform"
@@ -58,15 +71,22 @@ export default function SuporteManutencaoPage() {
         <section className="py-20 lg:py-24 bg-ink-50 dark:bg-ink-950">
           <div className="mx-auto max-w-6xl px-5">
             <h2 className="text-3xl sm:text-4xl font-bold text-ink-900 dark:text-white">O que oferecemos</h2>
-            <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <h3 className="mt-10 text-sm font-semibold text-brand-600 uppercase tracking-wide">
+              Infraestrutura de rede
+            </h3>
+            <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {infraGroup.map((f) => (
+                <FeatureCard key={f.title} title={f.title} description={f.description} />
+              ))}
+            </div>
+
+            <h3 className="mt-12 text-sm font-semibold text-brand-600 uppercase tracking-wide">
+              Suporte e manutenção
+            </h3>
+            <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {suporteFeatures.map((f) => (
-                <div
-                  key={f.title}
-                  className="rounded-2xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 p-6"
-                >
-                  <h3 className="font-semibold text-ink-900 dark:text-white">{f.title}</h3>
-                  <p className="mt-2 text-sm text-ink-500 dark:text-ink-400">{f.description}</p>
-                </div>
+                <FeatureCard key={f.title} title={f.title} description={f.description} />
               ))}
             </div>
           </div>
@@ -138,6 +158,11 @@ export default function SuporteManutencaoPage() {
               Tokai — instrumentos musicais
             </h2>
             <p className="mt-4 text-ink-500 dark:text-ink-400">
+              Estruturamos e mantemos a rede da Tokai: servidor Linux com Samba configurado e VPN
+              para atender 35 máquinas, com organização de infraestrutura que sustenta o dia a dia
+              da operação, suporte dedicado.
+            </p>
+            <p className="mt-4 text-ink-500 dark:text-ink-400">
               Mantemos a infraestrutura e a rede de computadores da Tokai — mais de 35 máquinas,
               servidores, wi-fi, backup, cloud e etc.
             </p>
@@ -147,10 +172,10 @@ export default function SuporteManutencaoPage() {
         <section className="py-20 lg:py-24 bg-ink-900">
           <div className="mx-auto max-w-3xl px-5 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
-              Sua TI merece suporte de verdade
+              Sua rede e sua TI merecem suporte de verdade
             </h2>
             <a
-              href={whatsappLink("Olá! Quero saber mais sobre planos de suporte e manutenção.")}
+              href={whatsappLink("Olá! Quero saber mais sobre infraestrutura, suporte e manutenção de TI.")}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-8 inline-flex items-center justify-center rounded-lg gradient-brand px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand-600/25 hover:-translate-y-0.5 transition-transform"

@@ -82,7 +82,7 @@ export const services = [
       "Manutenção preventiva e corretiva",
       "Monitoramento contínuo",
     ],
-    href: "/servicos/suporte-manutencao",
+    href: "/servicos/infraestrutura-manutencao-rede",
   },
 ];
 
@@ -270,7 +270,7 @@ export const portfolioCases: PortfolioCase[] = [
   },
   {
     slug: "tokai",
-    title: "Tokai — Infraestrutura, Atendimento SAC com IA e Monitoramento de Preços",
+    title: "Tokai — Infraestrutura e Manutenção da Rede de Computadores, Atendimento SAC com IA e Monitoramento de Preços",
     client: "Tokai, instrumentos musicais",
     pillars: ["arquitetura", "automacao", "produto", "atendimento"],
     approach: [

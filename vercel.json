@@ -32,5 +32,17 @@
       "source": "/funil-vendas.png",
       "destination": "https://lp-agosto-nura.vercel.app/funil-vendas.png"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/servicos/infraestrutura-de-redes",
+      "destination": "/servicos/infraestrutura-manutencao-rede",
+      "permanent": true
+    },
+    {
+      "source": "/servicos/suporte-manutencao",
+      "destination": "/servicos/infraestrutura-manutencao-rede",
+      "permanent": true
+    }
   ]
 }

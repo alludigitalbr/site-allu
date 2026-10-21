@@ -297,14 +297,4 @@ export const portfolioCases: PortfolioCase[] = [
     results:
       "Atendimento organizado em filas e tags dentro do Nura, com histórico completo por paciente e follow-up estruturado.",
   },
-  {
-    slug: "madeforte",
-    title: "Madeforte — Atendimento via WhatsApp",
-    client: "Madeforte",
-    pillars: ["atendimento"],
-    challenge:
-      "Centralizar o atendimento comercial via WhatsApp, com organização de leads por tags e filas.",
-    results:
-      "Atendimento estruturado no Nura, com respostas rápidas e organização por fila substituindo o WhatsApp pessoal disperso entre atendentes.",
-  },
 ];

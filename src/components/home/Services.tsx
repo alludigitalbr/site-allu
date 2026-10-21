@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { partnerModels, services, whatsappLink } from "@/lib/site-data";
 
@@ -117,16 +116,7 @@ export default function Services() {
             className="group sm:col-span-2 lg:col-span-3 rounded-2xl gradient-brand p-7 lg:p-8 text-white hover:-translate-y-0.5 hover:shadow-lg hover:shadow-brand-600/25 transition-all grid lg:grid-cols-2 gap-8"
           >
             <div className="flex flex-col">
-              <span className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white shadow-lg shadow-black/10">
-                <Image
-                  src="/images/brand/whatsapp-glyph.svg"
-                  alt="WhatsApp"
-                  width={40}
-                  height={40}
-                  className="h-10 w-10"
-                />
-              </span>
-              <span className="mt-4 inline-flex items-center rounded-full bg-white/15 px-2.5 py-1 text-xs font-semibold w-fit">
+              <span className="inline-flex items-center rounded-full bg-white/15 px-2.5 py-1 text-xs font-semibold w-fit">
                 Nura
               </span>
               <h3 className="mt-3 text-xl font-semibold">

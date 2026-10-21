@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { portfolioCases, portfolioPillars } from "@/lib/site-data";
-import Image from "next/image";
 
 export default function Portfolio() {
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
@@ -27,14 +26,6 @@ export default function Portfolio() {
             + de 10 cases reais de automações e plataformas digitais usando IA
           </h2>
         </div>
-
-        <Image
-          src="/images/brand/meta-business-partner.png"
-          alt="Meta Business Partner"
-          width={572}
-          height={329}
-          className="mt-8 h-24 w-auto"
-        />
 
         {/* Cases */}
         <div className="mt-10 grid gap-5">

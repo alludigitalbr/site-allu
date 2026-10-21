@@ -148,7 +148,7 @@ export interface PortfolioCase {
 export const portfolioCases: PortfolioCase[] = [
   {
     slug: "watrix",
-    title: "Automações, Integrações e Desenvolvimento do Cérebro da IA (Plataforma Watrix CRM)",
+    title: "Automações, Integrações e Desenvolvimento do Cérebro da IA (Plataforma Helena CRM)",
     client: "Startup do setor imobiliário",
     pillars: ["arquitetura", "automacao", "produto", "times"],
     context:

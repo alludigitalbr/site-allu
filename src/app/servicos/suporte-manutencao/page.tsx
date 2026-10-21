@@ -2,13 +2,32 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { whatsappLink } from "@/lib/site-data";
-import { suporteFeatures, suporteBeneficios } from "@/lib/infra-suporte-data";
+import {
+  suporteBeneficios,
+  suporteFeatures,
+  suporteIntro,
+  suporteModalidades,
+  suporteParaQuem,
+  suporteSteps,
+} from "@/lib/infra-suporte-data";
 
 export const metadata: Metadata = {
-  title: "Suporte e Manutenção — Allu Digital",
+  title: "Suporte e Manutenção de TI — Allu Digital",
   description:
-    "Suporte técnico dedicado, manutenção preventiva e corretiva, monitoramento contínuo e consultoria técnica para manter sua operação de TI sempre no ar.",
+    "Suporte técnico remoto e presencial, manutenção, redes, servidores, VPN, backup e monitoramento contínuo. Avulso ou contrato mensal com valor fixo.",
 };
+
+function Check() {
+  return (
+    <svg className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
+      <path
+        fillRule="evenodd"
+        d="M16.7 5.3a1 1 0 010 1.4l-7.5 7.5a1 1 0 01-1.4 0l-3.5-3.5a1 1 0 111.4-1.4l2.8 2.8 6.8-6.8a1 1 0 011.4 0z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+}
 
 export default function SuporteManutencaoPage() {
   return (
@@ -24,11 +43,7 @@ export default function SuporteManutencaoPage() {
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold tracking-tight text-ink-900 dark:text-white">
               Sua operação de TI sempre no ar
             </h1>
-            <p className="mt-5 text-lg text-ink-500 dark:text-ink-400">
-              Suporte técnico contínuo e manutenção preventiva que resolvem problema rápido e
-              evitam que ele volte a acontecer — sem depender de sorte pra sua infraestrutura
-              continuar funcionando.
-            </p>
+            <p className="mt-5 text-lg text-ink-500 dark:text-ink-400">{suporteIntro}</p>
             <a
               href={whatsappLink("Olá! Quero saber mais sobre suporte e manutenção com a Allu Digital.")}
               target="_blank"
@@ -42,10 +57,8 @@ export default function SuporteManutencaoPage() {
 
         <section className="py-20 lg:py-24 bg-ink-50 dark:bg-ink-950">
           <div className="mx-auto max-w-6xl px-5">
-            <h2 className="text-3xl sm:text-4xl font-bold text-ink-900 dark:text-white">
-              O que fazemos
-            </h2>
-            <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-ink-900 dark:text-white">O que oferecemos</h2>
+            <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {suporteFeatures.map((f) => (
                 <div
                   key={f.title}
@@ -60,20 +73,56 @@ export default function SuporteManutencaoPage() {
         </section>
 
         <section className="py-20 lg:py-24">
+          <div className="mx-auto max-w-6xl px-5 grid lg:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-ink-900 dark:text-white">Benefícios</h2>
+              <ul className="mt-8 space-y-4">
+                {suporteBeneficios.map((b) => (
+                  <li key={b} className="flex gap-3 text-ink-700 dark:text-ink-200">
+                    <Check />
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-ink-900 dark:text-white">Para quem é</h2>
+              <p className="mt-8 text-ink-500 dark:text-ink-400">{suporteParaQuem}</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 lg:py-24 bg-ink-50 dark:bg-ink-950">
           <div className="mx-auto max-w-6xl px-5">
             <h2 className="text-3xl sm:text-4xl font-bold text-ink-900 dark:text-white">
-              Benefícios
+              Modalidades de atendimento
             </h2>
-            <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {suporteBeneficios.map((b) => (
-                <div key={b.title} className="flex gap-3">
-                  <svg className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
-                    <path fillRule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7.5 7.5a1 1 0 01-1.4 0l-3.5-3.5a1 1 0 111.4-1.4l2.8 2.8 6.8-6.8a1 1 0 011.4 0z" clipRule="evenodd" />
-                  </svg>
-                  <div>
-                    <h3 className="font-semibold text-ink-900 dark:text-white">{b.title}</h3>
-                    <p className="mt-1 text-sm text-ink-500 dark:text-ink-400">{b.description}</p>
-                  </div>
+            <div className="mt-10 grid md:grid-cols-2 gap-6">
+              {suporteModalidades.map((m) => (
+                <div
+                  key={m.title}
+                  className="rounded-2xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 p-7"
+                >
+                  <h3 className="text-xl font-semibold text-ink-900 dark:text-white">{m.title}</h3>
+                  <p className="mt-3 text-sm text-ink-500 dark:text-ink-400">{m.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 lg:py-24">
+          <div className="mx-auto max-w-6xl px-5">
+            <h2 className="text-3xl sm:text-4xl font-bold text-ink-900 dark:text-white">Como funciona</h2>
+            <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {suporteSteps.map((s, i) => (
+                <div
+                  key={s.title}
+                  className="rounded-2xl bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 p-6"
+                >
+                  <span className="text-xs font-bold text-brand-600">0{i + 1}</span>
+                  <h3 className="mt-6 font-semibold text-ink-900 dark:text-white">{s.title}</h3>
+                  <p className="mt-2 text-sm text-ink-500 dark:text-ink-400">{s.description}</p>
                 </div>
               ))}
             </div>

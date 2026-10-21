@@ -15,11 +15,12 @@ export default function About() {
           <span className="text-sm font-semibold text-brand-600 uppercase tracking-wide">
             Sobre Nós
           </span>
-          <p className="mt-4 text-xl sm:text-2xl font-semibold text-ink-900 dark:text-white leading-snug">
-            Somos uma consultoria de Inteligência Artificial e automação de processos,
-            e ajudamos empresas a mapear como seus processos funcionam hoje,
-            identificar gargalos e transformar operações manuais em fluxos inteligentes,
-            integrados e escaláveis.
+          <h2 className="mt-4 text-2xl sm:text-3xl lg:text-4xl font-bold text-ink-900 dark:text-white leading-tight">
+            Mapeamos como sua empresa funciona hoje e transformamos operações manuais em fluxos
+            inteligentes, integrados e escaláveis.
+          </h2>
+          <p className="mt-5 text-lg text-ink-500 dark:text-ink-400">
+            Somos uma consultoria de Inteligência Artificial e automação de processos.
           </p>
         </div>
 

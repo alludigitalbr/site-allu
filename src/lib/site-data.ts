@@ -57,6 +57,7 @@ export const services = [
       "Gestão de projetos",
       "Automação, integração e IA",
     ],
+    href: "/servicos/consultoria-ti-ia",
   },
   {
     title: "Infraestrutura de Redes",

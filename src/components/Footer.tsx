@@ -17,9 +17,9 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="/#servicos" className="hover:text-white transition-colors">
+              <Link href="/servicos/consultoria-ti-ia" className="hover:text-white transition-colors">
                 Consultoria de TI e IA
-              </a>
+              </Link>
             </li>
             <li>
               <Link href="/servicos/infraestrutura-de-redes" className="hover:text-white transition-colors">

@@ -40,44 +40,80 @@ export const infraBeneficios = [
   { title: "Tecnologia atualizada", description: "Equipamentos e práticas alinhados com o que há de mais atual no mercado." },
 ];
 
+export const suporteIntro =
+  'Computador lento, rede caindo, arquivos espalhados e colaboradores que não conseguem acessar os sistemas de casa. Cada problema desses custa tempo e dinheiro. A Alludigital cuida de toda a estrutura de TI da sua empresa, dos computadores aos servidores, para que você tenha uma operação estável, segura e pronta para crescer.';
+
 export const suporteFeatures = [
   {
-    title: "Suporte técnico dedicado",
+    title: 'Suporte técnico remoto e presencial',
     description:
-      "Time disponível para resolver problemas rapidamente, sem enrolação e sem fila de atendimento genérico.",
+      'Atendimento rápido para os problemas do dia a dia, por acesso remoto ou com visita técnica quando necessário.',
   },
   {
-    title: "Manutenção preventiva",
+    title: 'Manutenção preventiva e corretiva',
     description:
-      "Checagens regulares que identificam desgaste e risco de falha antes que virem parada de operação.",
+      'Limpeza, atualizações e verificação periódica dos equipamentos, além de diagnóstico e reparo de computadores, notebooks e periféricos.',
   },
   {
-    title: "Manutenção corretiva",
+    title: 'Instalação e configuração',
     description:
-      "Quando o problema já aconteceu, resposta rápida para restaurar a operação com o menor impacto possível.",
+      'Preparação de novos equipamentos, sistemas, programas, impressoras, e-mails e acessos dos colaboradores.',
   },
   {
-    title: "Atualização de softwares e hardware",
+    title: 'Redes e conectividade',
     description:
-      "Sistemas sempre com patches de segurança e versões atuais, sem deixar brecha aberta por negligência.",
+      'Instalação e manutenção de redes cabeadas e Wi-Fi, roteadores e compartilhamento de recursos.',
   },
   {
-    title: "Monitoramento contínuo",
+    title: 'Servidores',
     description:
-      "Acompanhamento constante de servidores e equipamentos, identificando problema antes que o cliente perceba.",
+      'Implantação e gestão de servidores locais, virtuais ou em nuvem, com organização de arquivos por setor e controle de acesso para cada colaborador.',
   },
   {
-    title: "Consultoria técnica",
+    title: 'VPN e acesso remoto seguro',
     description:
-      "Orientação especializada para melhorar segurança, eficiência e organização da infraestrutura de TI.",
+      'Sua equipe acessa arquivos, sistemas e o ERP de casa, em viagem ou de outra filial, com conexão criptografada e protegida.',
+  },
+  {
+    title: 'Backup e segurança',
+    description:
+      'Antivírus, atualizações de segurança e backups automáticos (local e em nuvem), com plano de recuperação contra falhas, vírus e ransomware.',
+  },
+  {
+    title: 'Monitoramento contínuo',
+    description:
+      'Acompanhamento do desempenho de servidores e equipamentos, agindo antes que um problema pare a operação.',
   },
 ];
 
 export const suporteBeneficios = [
-  { title: "Menos tempo parado", description: "Problemas resolvidos rápido, antes de virarem prejuízo operacional." },
-  { title: "Previsibilidade", description: "Manutenção preventiva evita surpresa — e orçamento fora de controle." },
-  { title: "Segurança em dia", description: "Atualizações aplicadas continuamente, sem depender de alguém lembrar." },
-  { title: "Visibilidade real", description: "Monitoramento contínuo mostra o que está acontecendo, não só quando quebra." },
-  { title: "Suporte de verdade", description: "Time técnico acessível, não um chatbot que não resolve nada." },
-  { title: "Evolução constante", description: "Consultoria técnica ajuda a infraestrutura acompanhar o crescimento da empresa." },
+  'Menos tempo parado por problemas técnicos',
+  'Informações centralizadas, organizadas e protegidas',
+  'Trabalho remoto e entre filiais com segurança',
+  'Equipamentos com melhor desempenho e vida útil maior',
+  'Custo previsível com contrato mensal',
+  'Um único parceiro cuidando de toda a sua TI',
 ];
+
+export const suporteModalidades = [
+  {
+    title: 'Avulso',
+    description:
+      'Para resolver um problema pontual ou implantar um projeto específico, como um servidor ou uma VPN.',
+  },
+  {
+    title: 'Contrato mensal',
+    description:
+      'Suporte contínuo, manutenção preventiva, monitoramento de servidores e prioridade no atendimento, com valor fixo por mês.',
+  },
+];
+
+export const suporteSteps = [
+  { title: 'Diagnóstico', description: 'Avaliamos os equipamentos, a rede, os servidores e as necessidades de acesso da sua empresa.' },
+  { title: 'Proposta', description: 'Apresentamos as melhorias necessárias, com prazos e investimento claros.' },
+  { title: 'Implantação', description: 'Ajustamos e configuramos tudo com o mínimo de impacto na rotina.' },
+  { title: 'Suporte contínuo', description: 'Monitoramos, mantemos e atendemos sempre que você precisar.' },
+];
+
+export const suporteParaQuem =
+  'Escritórios e empresas de pequeno e médio porte que não têm equipe de TI interna, têm colaboradores em home office ou mais de uma unidade, e precisam de um parceiro confiável para manter tudo funcionando.';

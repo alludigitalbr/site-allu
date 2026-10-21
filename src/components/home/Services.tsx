@@ -43,47 +43,7 @@ export default function Services() {
           </h2>
         </div>
 
-        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div
-            id="parcerias"
-            className="sm:col-span-2 lg:col-span-4 rounded-2xl border border-ink-200 dark:border-ink-800 p-7 lg:p-8"
-          >
-            <h3 className="text-xl font-semibold text-ink-900 dark:text-white">
-              Parcerias com 3 modelos
-            </h3>
-            <p className="mt-2 text-sm text-ink-500 dark:text-ink-400 max-w-2xl">
-              Para agências, consultorias e profissionais que querem oferecer tecnologia, IA e
-              automação aos seus clientes sem precisar desenvolver.
-            </p>
-            <div className="mt-7 grid md:grid-cols-3 gap-5">
-              {partnerModels.map((model) => (
-                <div
-                  key={model.title}
-                  className="rounded-xl bg-ink-50 dark:bg-ink-900 border border-ink-200 dark:border-ink-800 p-6"
-                >
-                  <span className="text-xs font-bold uppercase tracking-wide text-brand-600">
-                    {model.label}
-                  </span>
-                  <h4 className="mt-2 font-semibold text-ink-900 dark:text-white">{model.title}</h4>
-                  <p className="mt-1 text-sm font-semibold text-brand-600">{model.highlight}</p>
-                  <p className="mt-3 text-sm text-ink-500 dark:text-ink-400">{model.description}</p>
-                  <p className="mt-3 flex items-start gap-2 text-sm text-ink-700 dark:text-ink-200">
-                    <Check className="text-brand-600" />
-                    {model.example}
-                  </p>
-                </div>
-              ))}
-            </div>
-            <a
-              href={whatsappLink("Olá! Quero saber mais sobre o programa de parcerias da Allu Digital.")}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-7 inline-flex items-center justify-center rounded-lg gradient-brand px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-600/25 hover:-translate-y-0.5 transition-transform"
-            >
-              Quero ser parceiro
-            </a>
-          </div>
-
+        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service) => {
             const content = (
               <>
@@ -113,7 +73,7 @@ export default function Services() {
 
           <Link
             href="/nura"
-            className="group sm:col-span-2 lg:col-span-4 rounded-2xl gradient-brand p-7 lg:p-8 text-white hover:-translate-y-0.5 hover:shadow-lg hover:shadow-brand-600/25 transition-all grid lg:grid-cols-2 gap-8"
+            className="group sm:col-span-2 lg:col-span-3 rounded-2xl gradient-brand p-7 lg:p-8 text-white hover:-translate-y-0.5 hover:shadow-lg hover:shadow-brand-600/25 transition-all grid lg:grid-cols-2 gap-8"
           >
             <div className="flex flex-col">
               <span className="inline-flex items-center rounded-full bg-white/15 px-2.5 py-1 text-xs font-semibold w-fit">
@@ -155,6 +115,46 @@ export default function Services() {
               </ul>
             </div>
           </Link>
+
+          <div
+            id="parcerias"
+            className="sm:col-span-2 lg:col-span-3 rounded-2xl border border-ink-200 dark:border-ink-800 p-7 lg:p-8"
+          >
+            <h3 className="text-xl font-semibold text-ink-900 dark:text-white">
+              Parcerias com 3 modelos
+            </h3>
+            <p className="mt-2 text-sm text-ink-500 dark:text-ink-400 max-w-2xl">
+              Para agências, consultorias e profissionais que querem oferecer tecnologia, IA e
+              automação aos seus clientes sem precisar desenvolver.
+            </p>
+            <div className="mt-7 grid md:grid-cols-3 gap-5">
+              {partnerModels.map((model) => (
+                <div
+                  key={model.title}
+                  className="rounded-xl bg-ink-50 dark:bg-ink-900 border border-ink-200 dark:border-ink-800 p-6"
+                >
+                  <span className="text-xs font-bold uppercase tracking-wide text-brand-600">
+                    {model.label}
+                  </span>
+                  <h4 className="mt-2 font-semibold text-ink-900 dark:text-white">{model.title}</h4>
+                  <p className="mt-1 text-sm font-semibold text-brand-600">{model.highlight}</p>
+                  <p className="mt-3 text-sm text-ink-500 dark:text-ink-400">{model.description}</p>
+                  <p className="mt-3 flex items-start gap-2 text-sm text-ink-700 dark:text-ink-200">
+                    <Check className="text-brand-600" />
+                    {model.example}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <a
+              href={whatsappLink("Olá! Quero saber mais sobre o programa de parcerias da Allu Digital.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-7 inline-flex items-center justify-center rounded-lg gradient-brand px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-600/25 hover:-translate-y-0.5 transition-transform"
+            >
+              Quero ser parceiro
+            </a>
+          </div>
         </div>
       </div>
     </section>

@@ -72,26 +72,15 @@ export const services = [
     ],
   },
   {
-    title: "Infraestrutura de Redes",
+    title: "Infraestrutura e Manutenção da Rede de Computadores",
     description:
-      "Cabeamento estruturado, redes wi-fi corporativas e organização de rack — infraestrutura pensada para durar e escalar.",
+      "Cabeamento estruturado, redes wi-fi corporativas e servidores, com suporte técnico dedicado e manutenção preventiva e corretiva para manter sua operação de TI sempre no ar.",
     features: [
-      "Cabeamento estruturado",
-      "Redes wi-fi corporativas",
-      "Organização de rack",
-      "Instalação e gestão de servidores",
-    ],
-    href: "/servicos/infraestrutura-de-redes",
-  },
-  {
-    title: "Suporte e Manutenção",
-    description:
-      "Suporte técnico dedicado e manutenção preventiva/corretiva para manter sua operação de TI sempre no ar.",
-    features: [
+      "Cabeamento estruturado e wi-fi corporativo",
+      "Organização de rack e servidores",
       "Suporte técnico dedicado",
       "Manutenção preventiva e corretiva",
       "Monitoramento contínuo",
-      "Consultoria técnica",
     ],
     href: "/servicos/suporte-manutencao",
   },

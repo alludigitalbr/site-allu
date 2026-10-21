@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { portfolioCases, portfolioPillars } from "@/lib/site-data";
-import { WhatsappIcon } from "@/components/SocialIcons";
+import Image from "next/image";
 
 export default function Portfolio() {
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
@@ -28,12 +28,13 @@ export default function Portfolio() {
           </h2>
         </div>
 
-        <div className="mt-8 inline-flex items-center gap-3 rounded-xl border border-ink-200 dark:border-ink-800 bg-white dark:bg-ink-900 px-4 py-3">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#25D366] text-white">
-            <WhatsappIcon className="h-6 w-6" />
-          </span>
-          <p className="text-sm font-bold text-ink-900 dark:text-white">WhatsApp Tech Partner</p>
-        </div>
+        <Image
+          src="/images/brand/meta-business-partner.png"
+          alt="Meta Business Partner"
+          width={572}
+          height={329}
+          className="mt-8 h-24 w-auto"
+        />
 
         {/* Cases */}
         <div className="mt-10 grid gap-5">

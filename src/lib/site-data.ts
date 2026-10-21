@@ -258,10 +258,10 @@ export const portfolioCases: PortfolioCase[] = [
   },
   {
     slug: "eliezer",
-    title: "Eliezer — Automação de Análise de Editais de Licitação Pública",
+    title: "Eliezer — Automação de Análise de Editais de Licitação Pública (Plataforma Departamento Leve)",
     pillars: ["automacao"],
     context:
-      "Processo manual e repetitivo de buscar editais em portais do governo, analisar um a um, identificar atestados exigidos e verificar documentações e declarações necessárias.",
+      "Um SaaS para ajudar empresários a ganhar licitação: encontre oportunidades, analise editais com IA, automatize a preparação de documentos e capacite sua equipe. Tudo em uma única plataforma. Antes, o processo era manual e repetitivo: buscar editais em portais do governo, analisar um a um, identificar atestados exigidos e verificar documentações e declarações necessárias.",
     approachParagraph:
       "três agentes de IA — agente de análise de editais (lê e resume os principais pontos, envia por e-mail e gera um PDF do resumo), agente de automação para gerar declarações e localizar atestados, e agente de busca automática de editais no portal PNCP.",
     results:

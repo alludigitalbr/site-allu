@@ -48,16 +48,28 @@ export const partnerModels = [
 
 export const services = [
   {
-    title: "Consultoria de TI e IA",
+    title: "Consultoria de IA",
     description:
-      "Mapeamento de processos, técnicas de design thinking (inception) e gestão de projetos, com especialistas em processos para melhorar os indicadores do negócio usando tecnologia, automação e integração.",
+      "Mapeamento de processos, técnicas de design thinking e gestão de projetos, com especialista em processos para melhorar os indicadores do negócio usando tecnologia, automação e integração.",
     features: [
       "Mapeamento de processos",
-      "Design thinking (inception)",
+      "Design thinking",
       "Gestão de projetos",
-      "Automação, integração e IA",
+      "Automação, integração",
     ],
     href: "/servicos/consultoria-ti-ia",
+  },
+  {
+    title: "Consultoria em Desenvolvimento",
+    description:
+      "Sua empresa já criou um sistema com ferramentas de IA, mas agora precisa de organização para evoluir? Estruturamos o seu código, implantamos boas práticas de engenharia de software e preparamos o seu time para desenvolver com IA de forma profissional, segura e escalável.",
+    features: [
+      "Estruturação de código legado criado com IA",
+      "Desenvolvimento assistido por IA com Claude Code",
+      "Versionamento e CI/CD com GitHub Actions",
+      "Deploy automatizado em servidores na nuvem",
+      "Gestão ágil com sprints e tasks no Jira/Asana",
+    ],
   },
   {
     title: "Infraestrutura de Redes",

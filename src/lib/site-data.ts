@@ -270,7 +270,7 @@ export const portfolioCases: PortfolioCase[] = [
   },
   {
     slug: "tokai",
-    title: "Tokai — Infraestrutura e Manutenção da Rede de Computadores, Atendimento SAC com IA e Monitoramento de Preços",
+    title: "Infraestrutura e Manutenção da Rede de Computadores",
     client: "Tokai, instrumentos musicais",
     pillars: ["arquitetura", "automacao", "produto", "atendimento"],
     approach: [

@@ -203,6 +203,7 @@ export const portfolioCases: PortfolioCase[] = [
   {
     slug: "ai-call-flow",
     title: "AI Call Flow — Produto de Ligações com IA (Inbound & Outbound)",
+    client: "Startup do mercado digital",
     pillars: ["automacao", "produto"],
     context:
       "Novo produto voltado a clientes high-ticket, aproveitando a base existente de clientes do CRM B2B e abrindo espaço para novos clientes.",
@@ -215,7 +216,7 @@ export const portfolioCases: PortfolioCase[] = [
   {
     slug: "s2-viagens-mvp",
     title: "MVP de Inteligência Comercial",
-    client: "Agência de viagens",
+    client: "Produto Allu Digital",
     pillars: ["produto", "automacao"],
     challenge:
       "Gerir a entrega de um MVP para detectar inatividade nos atendimentos, identificar oportunidades de pacotes aéreos, recomendar follow-ups e sumarizar conversas.",
@@ -236,6 +237,7 @@ export const portfolioCases: PortfolioCase[] = [
   {
     slug: "peter-ai",
     title: "Peter AI — Agente Proativo para Slack e Microsoft Teams",
+    client: "Empresa especializada em assessoria pré-vestibular de alto desempenho, focada nos exames da FGV e do Insper",
     pillars: ["arquitetura", "automacao", "times"],
     challenge:
       "Criar um agente proativo (Duck), membro do time PeterAI, capaz de mapear conversas e canais, identificar processos manuais e repetitivos, sugerir e criar automações, e resumir grupos de conversa.",
@@ -262,7 +264,8 @@ export const portfolioCases: PortfolioCase[] = [
   },
   {
     slug: "eliezer",
-    title: "Automação de Análise de Editais de Licitação Pública (Plataforma Departamento Leve)",
+    title: "Desenvolvimento e Automação de Análise de Editais de Licitação Pública (Plataforma Departamento Leve)",
+    client: "Consultor em Licitações",
     pillars: ["automacao"],
     context:
       "Um SaaS para ajudar empresários a ganhar licitação: encontre oportunidades, analise editais com IA, automatize a preparação de documentos e capacite sua equipe. Tudo em uma única plataforma. Antes, o processo era manual e repetitivo: buscar editais em portais do governo, analisar um a um, identificar atestados exigidos e verificar documentações e declarações necessárias.",

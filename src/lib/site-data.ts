@@ -190,6 +190,7 @@ export const portfolioCases: PortfolioCase[] = [
   {
     slug: "smart-crm",
     title: "Evolução de CRM B2B com Agentes de IA",
+    client: "Empresa de software SaaS",
     pillars: ["arquitetura", "automacao", "produto"],
     context:
       "CRM B2B voltado para empresas que precisam automatizar atendimentos com agentes de IA, integrando Meta, API Oficial do WhatsApp ou Evolution API.",

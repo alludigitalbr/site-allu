@@ -140,6 +140,8 @@ export interface PortfolioCase {
   approachParagraph?: string;
   tools?: string[];
   results?: string;
+  resultsList?: string[];
+  image?: { src: string; alt: string; width: number; height: number };
 }
 
 export const portfolioCases: PortfolioCase[] = [
@@ -296,5 +298,19 @@ export const portfolioCases: PortfolioCase[] = [
       "Centralizar o atendimento aos pacientes pelo WhatsApp, organizando agendamentos e follow-ups que antes eram feitos manualmente pela recepção.",
     results:
       "Atendimento organizado em filas e tags dentro do Nura, com histórico completo por paciente e follow-up estruturado.",
+  },
+  {
+    slug: "sac-tokai",
+    title: "SAC Tokai — Atendimento via WhatsApp",
+    client: "Tokai, instrumentos musicais",
+    pillars: ["atendimento"],
+    challenge:
+      "Centralizar e organizar mais de 600 atendimentos por mês dos clientes de pós-venda.",
+    results:
+      "Mais clientes sendo atendidos e maior clareza da etapa do fluxo de atendimento.",
+    resultsList: [
+      "Mais de 5% dos atendimentos 100% automatizados",
+      "Clareza do que está em atendimento agora",
+    ],
   },
 ];

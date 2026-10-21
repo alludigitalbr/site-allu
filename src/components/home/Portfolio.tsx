@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { portfolioCases, portfolioPillars } from "@/lib/site-data";
 
 export default function Portfolio() {
@@ -113,6 +114,22 @@ export default function Portfolio() {
                         <span className="font-semibold text-ink-900 dark:text-white">Resultados: </span>
                         {c.results}
                       </p>
+                    )}
+                    {c.resultsList && (
+                      <ul className="space-y-2 list-disc pl-5">
+                        {c.resultsList.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    )}
+                    {c.image && (
+                      <Image
+                        src={c.image.src}
+                        alt={c.image.alt}
+                        width={c.image.width}
+                        height={c.image.height}
+                        className="w-full h-auto rounded-xl border border-ink-200 dark:border-ink-800"
+                      />
                     )}
                     {c.tools && c.tools.length > 0 && (
                       <div>
